@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="min-h-screen bg-[#0a0908] text-gray-800 opacity-0 transition-opacity duration-500 ease-in">
+
+  <!-- FIXED BACKGROUND -->
+  <div 
+    class="fixed inset-0 bg-cover bg-center bg-fixed z-0 pointer-events-none"
+    style="background-image: url('/img/BG.png');">
+  </div>
+
+  <!-- HEADER -->
+  <header id="header" class="px-6 flex z-50 py-2 bg-transparent fixed w-full transition-colors duration-700 backdrop-blur-md">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="index.html">
+        <img class="w-[2rem] z-10" src="/img/Logo_w.png" alt="Logo"/>
+      </a>
+    </div>
+    <div class="flex items-center z-20" id="menu">
+      <nav>
+        <ul class="flex gap-3 items-center justify-between text-lg font-sans text-gray-900 pt-0">
+          <li>
+            <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="index.html#nextSection">Projects</a>
+          </li>
+          <li>
+            <a class="bg-black rounded-full py-1 px-4 block border-2 border-transparent text-white hover:text-white hover:border-indigo-700 hover:border-2 font-semibold transition-colors duration-300 ease-in-out cursor-pointer" href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-8 pb-10">
+
+    <!-- HERO SECTION -->
+    <div id="hero" class="relative w-full overflow-visible group">
+      <div class="max-w-3xl mx-auto mb-20 p-10 relative left-auto border-1 border-white/80 right-auto rounded-3xl top-22 bg-white/50 backdrop-blur-sm shadow-lg">
+
+        <div class="flex items-center mb-6 gap-8">
+          <img class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/Logo.png" alt="Profile picture" />
+          <div>
+            <h1 class="text-3xl select-all font-extralight font-sans text-gray-900">Wojciech Trzpis</h1>
+            <p class="text-lg text-gray-600">Senior UI/UX Designer</p>
+
+            <p class="mt-2 font-bold">Email: <a class="select-all font-normal text-blue-700 hover:underline" href="mailto:wojciechtrzpis1@gmail.com">wojciechtrzpis1@gmail.com</a></p>
+            <p class="font-bold">Phone: <a class="select-all font-normal text-blue-700 hover:underline" href="tel:+48 603-868-747">(+48) 603-868-747</a></p>
+            <p class="font-bold">LinkedIn: <a class="select-all font-normal text-blue-700 hover:underline" href="https://www.linkedin.com/in/wojciech-trzpis-02836314/" target="_blank"> wojciech-trzpis-02836314</a></p>
+          </div>
+        </div>
+
+        <section class="mt-8">
+          <h2 class="section-title text-xl">Experience</h2>
+          <div class="space-y-4">
+
+            <!-- Exp 1 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">Leading Designer at McKinsey</h3>
+              <p class="text-gray-600">Sep 2021 - Present</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Leading the end-to-end design process, from user research to final UI delivery for should-costing platform.</li>
+                    <li>Leading the integration of AI Assitants into an existing product.</li>
+                    <li>Driving digital transformation for a legacy product with significant design debt.</li>
+                    <li>Creating and maintaining a design system based on MUI (Material UI).</li>
+                    <li>Monitored user analytics post-launch to identify opportunities for UX enhancement and increased guest satisfaction.</li>
+                    <li>Designing user flows and personas to align with business and user needs.</li>
+                    <li>Planning and facilitating user workshops to gather insights and co-create solutions.</li>
+                    <li>Presenting design concepts and solutions to stakeholders and decision-makers.</li>
+                    <li>Creating interactive prototypes</li>
+                    <li>Collaborating closely multidisciplinary teams worldwide on refinements, design handoff, reviews, and implementation iterations.</li>
+                    <li>Designing complex React-based UIs with smooth and intuitive animations.</li>
+                    <li>Working in close alignment with stakeholders, product owners, and development teams.</li>
+                    <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
+                    <li>Reviewing design work and providing clear, constructive feedback to ensure quality and consistency.</li>
+                    <li>Mentoring and supporting the growth of junior designers.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+            <!-- Exp 2 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">Senior UX/UI Designer at Silvair</h3>
+              <p class="text-gray-600">May 2017 - Jun 2023</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Designing the Silvair Platform’s web application and iOS app to enable seamless provisioning, commissioning, and management of Bluetooth Mesh lighting networks.</li>
+                    <li>Creating a modern UX for complex IoT system.</li>
+                    <li>Developing and maintaining a cohesive design system aligned with Silvair’s brand identity.</li>
+                    <li>Crafting user flows, personas, empathy maps, and usage scenarios to support diverse commercial lighting projects.</li>
+                    <li>Planning and conducting interviews and workshops with system integrators, lighting designers, and facility managers to gather insights and validate design decisions.</li>
+                    <li>Creating high-fidelity interactive prototypes in Sketch and Axure RP.</li>
+                    <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
+                    <li>Leading and participating in brainstorming sessions.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+            <!-- Exp 3 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">Senior UX/UI Designer at Motorola Solutions</h3>
+              <p class="text-gray-600">Jul 2019 - Sep 2021</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Designing the Partner Hub web platform to streamline collaboration between Motorola Solutions and its global partner network.</li>
+                    <li>Collaborating closely multidisciplinary teams worldwide on refinements, design handoff, reviews, and implementation iterations.</li>
+                    <li>Developing a scalable design system aligned with Motorola Solutions’ corporate brand guidelines.</li>
+                    <li>Presenting wireframes, concepts, and prototypes to stakeholders and gathering feedback to inform design iterations.</li>
+                    <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
+                    <li>Building interactive prototypes in Sketch.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+
+            <!-- Exp 4 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">UX Designer at ING Bank Śląski</h3>
+              <p class="text-gray-600">Mar 2016 - Apr 2017</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Contributing to the strategic redesign of the Offers section in ING’s web application to improve product discovery and engagement.</li>
+                    <li>Creating interactive, prototypes in Axure to support user testing and stakeholder validation.</li>
+                    <li>Collaborating with a UX research agency to define research goals, conduct user interviews, and synthesize actionable insights.</li>
+                    <li>Working closely with the legal team and internal bank departments to ensure regulatory compliance and alignment with internal policies.</li>
+                    <li>Facilitating and participating in brainstorming workshops to define user flows, generate design concepts, and align cross-functional teams.</li>
+                    <li>Collaborating daily with the Polish design team to maintain consistency across features and ensure smooth delivery within agile sprints.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+
+            <!-- Exp 5 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">UI Designer at eSky.pl</h3>
+              <p class="text-gray-600">Sep 2014 - Mar 2016</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Designing the Deals section for eSky.pl to enhance user engagement and highlight competitive travel offers.</li>
+                    <li>Envisioning and shaping concepts for the homepage to improve navigation, branding consistency, and conversion rates.</li>
+                    <li>Collaborating closely with the design team..</li>
+                    <li>Developing UI concepts and creating detailed wireframes and prototypes to communicate design solutions effectively.</li>
+                    <li>Designing the About Us and Contact sections to build trust, convey brand values, and facilitate user communication.</li>
+                    <li>Creating interactive internal dashboards to support data-driven decision-making and improve operational transparency within the company.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+
+            <!-- Exp 6 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">UX/UI Designer at Aileron</h3>
+              <p class="text-gray-600">Sep 2014 - Mar 2016</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Designed the iLumio smart TV application tailored for hotel environments, enhancing guest engagement.</li>
+                    <li>Mapped user journeys and developed wireframes to optimize the guest experience from TV navigation to hotel service interaction.</li>
+                    <li>Produced animations and visual concepts from low-fidelity sketches to high-fidelity interactive prototypes, ensuring smooth transitions and appealing visuals.</li>
+                    <li>Aligned app design with hotel branding and hospitality standards to maintain a consistent and premium user experience.</li>
+                    <li>Optimized UI for TV remote control navigation, prioritizing accessibility and ease of use.</li>
+                    <li>Coordinated with product owners, marketing teams, and hospitality experts to refine requirements and deliver features that meet industry needs.</li>
+                    <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
+                    <li>Supported multiple implementations of the iLumio app in prestigious hotels, including the Hilton chain, delivering tailored solutions for diverse hospitality environments.</li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+
+            <!-- Exp 7 -->
+            <div class="pb-10">
+              <h3 class="font-semibold">Senior Web Designer at Chilid (now Boldare)</h3>
+              <p class="text-gray-600">Mar 2012 - May 2014</p>
+
+              <div class="relative">
+                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                  <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
+                    <li>Worked as a web designer for one of Poland’s leading interactive agencies, delivering high-quality digital solutions across diverse industries.</li>
+                    <li>Contributed to projects for prominent clients including Corel Corporation, Rete InCampagna, Activist, Empik, Top Secret, Klif Fashion House, and Wola Park Warsaw.</li>
+                    <li>Designed responsive and user-centered websites that aligned with client branding and business goals.</li>
+                    <li>Collaborated closely with cross-functional teams including developers, UX designers, and marketing specialists to ensure cohesive project delivery.</li>
+                    <li>Created wireframes, mockups, and prototypes to effectively communicate design concepts and gather stakeholder feedback.</li>
+                    <li>Optimized website layouts and interactions for improved usability and engagement across devices.</li>
+                    </li>
+                  </ul>
+                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
+                </div>
+
+                <div class="flex justify-end">
+                  <button
+                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
+                  >
+                    Show all
+                  </button>
+                </div>
+                <div class="mt-8 border-t border-gray-300"></div>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
+    <section class="mt-8">
+          <h2 class="section-title text-xl">Skills</h2>
+          <div>
+            <ul>
+              <li><strong>UX/UI:</strong> Design Systems · User Journey Mapping · User-Centered Design · User Testing · Prototyping · Animation · Data Analysis · English (Professional)</li>
+              <li><strong>Front-End:</strong> HTML · CSS · JavaScript · React · Angular · Tailwind · Bootstrap · Material Design</li>
+              <li><strong>Design Tools:</strong> Figma · Sketch · Photoshop · Illustrator · Axure · InVision · Principle · Adobe XD · Affinity Designer · Affinity Photo · InDesign</li>
+              <li><strong>Motion/3D:</strong> After Effects · Lottie · Blender · Cinema 4D · Animate</li>
+              <li><strong>Prototyping/No-Code:</strong> Framer · Webflow · UXPin · Play · Zeplin</li>
+              <li><strong>Design Systems & Docs:</strong> Storybook · Zeroheight · Supernova · Specify</li>
+              <li><strong>Analytics & Testing:</strong> Heap · Hotjar · Mixpanel · FullStory · Lookback · Maze</li>
+              <li><strong>Collaboration:</strong> Notion · Miro · Jira · Trello</li>
+            </ul>
+          </div>
+        </section>
+
+         <div class="mt-8 border-t border-gray-300"></div>
+
+        <section class="mt-8">
+          <h2 class="section-title text-xl">Education</h2>
+          <div>
+            <h3 class="font-semibold">Profession: Counsellor, Master Degree </h3>
+            <p class="text-gray-600">Jan Długosz Academy</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Fade in after page load
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.remove("opacity-0");
+
+      // Collapsible list toggle for all buttons
+      document.querySelectorAll('.toggle-button').forEach(button => {
+        const wrapper = button.closest('.relative').querySelector('.list-wrapper');
+        const overlay = button.closest('.relative').querySelector('.gradient-overlay');
+        let expanded = false;
+
+        button.addEventListener('click', () => {
+          expanded = !expanded;
+
+          if (expanded) {
+            wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+            overlay.style.display = 'none';
+            button.textContent = 'Show less';
+          } else {
+            wrapper.style.maxHeight = '8rem'; // max height collapsed (approx 4 lines)
+            overlay.style.display = 'block';
+            button.textContent = 'Show all';
+          }
+        });
+      });
+    });
+  </script>
+
+  <script>
+    // Page fade-out on link click
+    document.querySelectorAll("[data-fade]").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.body.classList.add("opacity-0");
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 500);
+      });
+    });
+  </script>
+
+
+
+
+</body>
+</html>

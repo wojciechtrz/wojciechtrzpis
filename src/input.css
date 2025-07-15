@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+
+    .section-title {
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }

@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="scroll-smooth scroll-py-[60px]" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black opacity-0 transition-opacity duration-500 ease-in">
+  
+  <!-- HEADER -->
+  <header id="header" class="px-2 flex z-11 py-2 bg-transparent fixed w-full transition-colors duration-700">
+    <a href="index.html#nextSection">
+    <div class="bg-black p-1 rounded-lg opacity-70 hover:opacity-100">
+    <div class="flex-1 flex justify-start gap-2 items-center pr-2 transition-discrete duration-1000 ease-in-out">
+    
+        <img class="w-[2rem] z-10" src="/img/Logo_rotate.png" alt="Logo"/>
+      
+      <p class="text-md font-light text-white">Back</p>
+    </div>
+    </div>
+    </a>
+  </header>
+
+  <!-- HERO SECTION -->
+  <div id="hero" class="relative w-full h-screen overflow-hidden group">
+
+      <!-- Background Image -->
+    <div class="fixed inset-0 bg-cover bg-center" 
+      style="background-image: url('/img/Mckinsey/McKinsey_bg.png');">
+    </div>
+    <!-- Color Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent ">
+    </div>
+    <!-- Hero Content -->
+    <div class="relative z-10 px-10 sm:px-10 lg:px-20 flex items-end h-full pb-20">
+      <div class="flex-wrap">
+      <h1 class="text-4xl sm:text-4xl lg:text-8xl max-w-3xl antialiased font-medium font-sans text-white">
+         McKinsey
+      </h1>
+      <p class="text-2xl text-white mt-8 font-light tracking-wide">Tool that reveals true product costs, empowering better negotiations, savings and supplier insights.
+</p>
+    </div>    
+    </div>
+  </div>
+
+
+<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+  
+  
+  <!--Section 1-->
+  <div class="mx-auto lg:mx-22 lg:grid grid-cols-1 justify-items-center gap-x-8 mb-60">
+  
+    <div class="lg:max-w-280 px-8 sm:px-4 flex flex-wrap h-fill items-center mt-28">
+      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
+      <p class="mt-4 text-2xl text-gray-700">I worked as a Lead UX/UI Designer on a complex enterprise platform focused on 
+  should-costing, cost optimization, and AI-driven decision support.
+  My responsibilities spanned the full design lifecycle, including:
+
+  <ul class="list-disc pl-6"class="list-disc pl-6">
+  <li class="mt-4 text-xl text-gray-700">Leading end-to-end design efforts, from user research and persona development to high-fidelity UI design and developer handoff.</li>
+  <li class="mt-4 text-xl text-gray-700">Designing the integration of AI assistants into existing workflows to enhance efficiency and user experience.</li>
+  <li class="mt-4 text-xl text-gray-700">Driving the digital transformation of a legacy product with significant design debt, reimagining the interface for clarity, modern aesthetics, and usability.</li>
+  <li class="mt-4 text-xl text-gray-700">Building and maintaining a scalable design system based on Material UI (MUI) to ensure consistency and accelerate development.</li>
+  <li class="mt-4 text-xl text-gray-700">Analyzing user data post-launch to identify pain points and prioritize UX improvements.</li>
+  <li class="mt-4 text-xl text-gray-700">Mapping detailed user flows and crafting personas to align business goals with user needs.</li>
+  <li class="mt-4 text-xl text-gray-700">Facilitating workshops and collaborative sessions to gather insights and co-create solutions with stakeholders.</li>
+  <li class="mt-4 text-xl text-gray-700">Developing interactive prototypes to validate concepts and secure stakeholder buy-in.</li>
+  <li class="mt-4 text-xl text-gray-700">Collaborating with multidisciplinary, global teams to refine designs, manage handoff processes, and support iterative development.</li>
+  <li class="mt-4 text-xl text-gray-700">Designing complex, data-rich React-based interfaces, incorporating smooth animations for intuitive user interactions.</li>
+  <li class="mt-4 text-xl text-gray-700">Producing detailed documentation to support scalability and knowledge sharing across teams.</li>
+  <li class="mt-4 text-xl text-gray-700">Providing mentorship and guidance to junior designers, helping grow the design team’s skills and cohesion.</li>
+</ul>
+
+</p>
+
+
+    </div>
+      
+    <div class="p-12 lg:top-4 lg:col-start-2 w-full hidden lg:block md:hidden lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+      <img class=" min-w-4xl relative rounded-xl w-full  bg-transparent" src="/img/i/silvair.png" alt="" />
+    </div>
+      
+  </div>
+
+
+
+<!--Cross link-->
+  <div class="w-full px-8">
+  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+    
+    <a href="esky.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+      <h3 class="text-2xl font-semibold">eSky</h3>
+    </a>
+    
+    <a href="viners.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+      <h3 class="text-2xl font-semibold">Viners</h3>
+    </a>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+  <script>
+    // Fade in after page load
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.remove("opacity-0");
+    });
+  </script>
+
+  <script>
+    // Page fade-out on link click
+    document.querySelectorAll("[data-fade]").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.body.classList.add("opacity-0");
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 500);
+      });
+    });
+  </script>
+
+  </body>
+  </html>
