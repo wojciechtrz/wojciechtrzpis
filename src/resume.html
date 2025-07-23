@@ -13,29 +13,62 @@
     style="background-image: url('../img/BG.png');">
   </div>
 
-  <!-- HEADER -->
-  <header id="header" class="px-6 flex z-50 py-2 bg-transparent fixed w-full transition-colors duration-700 backdrop-blur-md">
-    <div class="flex-1 flex justify-between items-center">
-      <a href="../index.html">
-        <img class="w-[2rem] z-10" src="../img/Logo.png" alt="Logo"/>
-      </a>
-    </div>
-    <div class="flex items-center z-20" id="menu">
-      <nav>
-        <ul class="flex gap-3 items-center justify-between text-lg font-sans text-gray-900 pt-0">
-          <li>
-            <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="../index.html">Home</a>
-          </li>
-          <li>
-            <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="../index.html#nextSection">Projects</a>
-          </li>
-          <li>
-            <a class="bg-black rounded-full py-1 px-4 block border-2 border-transparent text-white hover:text-white hover:border-indigo-700 hover:border-2 font-semibold transition-colors duration-300 ease-in-out cursor-pointer" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- HEADER -->
+<header id="header" class="px-4 flex z-50 py-4  bg-transparent fixed w-full transition-colors duration-700 backdrop-blur-md">
+  <div class="flex-1 flex justify-between items-center">
+    <a href="../index.html">
+      <img class="w-[2rem] z-10" src="../img/Logo.png" alt="Logo" />
+    </a>
+
+    <!-- MOBILE MENU ICON -->
+    <button id="burger-btn" class="sm:hidden bg-transparent text-black text-2xl py-1/2 px-1.5 z-20 hover:bg-black/10 active:bg-black/20 transition-colors duration-300 ease-in-out">
+      ☰
+    </button>
+  </div>
+
+  <!-- DESKTOP MENU -->
+  <div class="hidden sm:flex items-center z-20" id="menu">
+    <nav>
+      <ul class="flex gap-3 items-center justify-between text-lg font-sans text-gray-900 pt-0">
+        <li>
+          <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-black/90 hover:text-black transition-colors duration-300 ease-in-out cursor-pointer" href="../index.html#nextSection">Projects</a>
+        </li>
+        <li>
+          <a class="bg-black rounded-full py-1 px-4 block border-2 border-transparent text-white hover:text-white hover:border-indigo-700 hover:border-2 font-semibold transition-colors duration-300 ease-in-out cursor-pointer" href="resume.html">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobile-overlay" class="sm:hidden fixed inset-0 z-30 hidden">
+  <div id="mobile-menu"
+    class="absolute top-16 left-0 w-full bg-white/95 text-black
+           overflow-hidden transition-all duration-300 ease-in-out
+           opacity-0 max-h-0 scale-y-95 invisible">
+    <ul class="flex flex-col items-start py-3 text-lg w-full">
+      <li class="w-full">
+        <a href="../index.html" class="block w-full py-3 px-6 font-light hover:bg-black/10 active:bg-black/20 transition-colors duration-200">Home</a>
+      </li>
+      <li class="w-full">
+        <a href="../index.html#nextSection" class="block w-full py-3 px-6 font-light hover:bg-black/10 active:bg-black/20 transition-colors duration-200">Projects</a>
+      </li>
+      <li class="w-full">
+        <a href="resume.html" class="block w-full py-3 px-6 font-light hover:bg-black/10 active:bg-black/20 transition-colors duration-200">Resume</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
 
   <main class="relative z-10 pt-8 pb-10">
 
@@ -354,6 +387,44 @@
       });
     });
   </script>
+
+
+<!--mobile menu-->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileOverlay = document.getElementById('mobile-overlay');
+
+    let isOpen = false;
+
+    const openMenu = () => {
+      mobileOverlay.classList.remove('hidden');
+      mobileMenu.classList.remove('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
+      mobileMenu.classList.add('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
+      isOpen = true;
+    };
+
+    const closeMenu = () => {
+      mobileMenu.classList.remove('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
+      mobileMenu.classList.add('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
+      setTimeout(() => {
+        mobileOverlay.classList.add('hidden');
+      }, 300); // po animacji
+      isOpen = false;
+    };
+
+    burgerBtn.addEventListener('click', () => {
+      isOpen ? closeMenu() : openMenu();
+    });
+
+    mobileOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileOverlay) {
+        closeMenu();
+      }
+    });
+  });
+</script>
 
 
 
