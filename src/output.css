@@ -490,6 +490,12 @@
   .max-h-40 {
     max-height: calc(var(--spacing) * 40);
   }
+  .max-h-70 {
+    max-height: calc(var(--spacing) * 70);
+  }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
+  }
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
   }
