@@ -32,146 +32,130 @@
     </div>
 
     <!-- Color Overlay -->
-    <div class="absolute inset-0 backdrop-hue-rotate-30 bg-gradient-to-t from-black to-transparent"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
   
     <!-- Hero Content -->
-    <div class="relative z-10 px-8 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
-      <div class="flex-wrap">
-        <h1 class="text-3xl sm:text-4xl lg:text-8xl max-w-3xl antialiased font-medium font-sans text-white">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
+      <div class="block">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl antialiased font-medium font-sans text-white">
           Silvair Platform
         </h1>
-        <p class="text-base sm:text-2xl text-white mt-2 sm:mt-8 font-light tracking-wide">Lighting control platform based on the globally interoperable Bluetooth mesh standard.</p>
+        <p class="text-lg md:text-2xl mt-2 lg:mt-6 text-white font-light antialiased tracking-wider text-pretty">Lighting control platform based on the globally interoperable Bluetooth mesh standard.</p>
       </div>    
     </div>
   </div>
 
 
 
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+<div class="relative isolate overflow-hidden bg-white pt-8 lg:pt-20">
   
-<!--Section 1-->
-  <div class="mx-auto lg:mx-22 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
+<!--Grid 1-->
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8 items-center px-6 sm:px-10 lg:px-20">
   
-    <div class="lg:max-w-150 px-8 sm:px-4 flex flex-wrap h-fill items-center mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
-      <p class="mt-4 text-2xl text-gray-700">As one of the Senior UX designers, I contributed to the development of the Silvair Platform a tool for designing, configuring, and managing lighting networks based on Bluetooth Mesh technology. The platform enables the creation of modern lighting systems in commercial buildings, ensuring reliable operation, flexible deployments and access to advanced data analytics.</p>
-</p>
+   <!--Section 1-->
+    <div class="lg:max-w-170 block justify-self-center order-1 ">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl md:mt-10 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
+      <p class="text-base 2xl:text-2xl mt-5 font-normal  text-pretty text-gray-700">As one of the Senior UX designers, I contributed to the development of the Silvair Platform a tool for designing, configuring, and managing lighting networks based on Bluetooth Mesh technology. The platform enables the creation of modern lighting systems in commercial buildings, ensuring reliable operation, flexible deployments and access to advanced data analytics.</p>
+    </div>
+    <div class="order-2 mt-10">
+      <img class="w-fit rounded-xl justify-self-center bg-transparent" src="../img/silvair/silvair.png" alt="Silvair Logo" />
+    </div>   
 
+    <!--Section 2-->  
+  <div class="lg:max-w-170 block justify-self-center order-4">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl md:mt-10 font-bold tracking-tight text-pretty text-gray-900">Planning Stage</h1>
+      <p class="text-base 2xl:text-2xl mt-5 font-normal  text-pretty text-gray-700">
+      The user journey begins with the planning stage. Users create an account and start a new project by setting up their workspace and managing team roles in the Collaborate section. Next, they upload floor plans and organize spaces using a visual canvas that makes it easy to define zones. Once the layout is ready, they assign lighting zones, choose from pre-built control profiles like daylight harvesting, and fine-tune settings to match project requirements.
+      </p>
     </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="w-full rounded-xl bg-transparent" src="../img/silvair/silvair.png" alt="" />
+    <div class="order-3 mt-10">
+      <img class="w-fit rounded-xl justify-self-center bg-transparent" src="../img/silvair/laptop.png" alt="Silvair Platform" />
     </div>
-      
+
   </div>
 
-  <!--Section 2-->
-  <div class="mx-auto mt-30 lg:grid grid-cols-2 gap-x-8 items-center">
+
+  <!--Section 3-->  
+<div class=" w-full mx-auto bg-[#E9F0F2] p-6 sm:p-10 lg:p-20 mt-20 sm:mt-50">
+  <div class="container lg:max-w-270 mx-auto mt-8 lg:mt-15 lg:mb-15">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-gray-900">Commissioning app</h1>
+<p class="text-base 2xl:text-2xl mt-5 font-normal  text-pretty text-gray-700">
+      The mobile app enables seamless on-site commissioning by allowing users to scan for mesh-capable luminaires, sensors, and switches, which are automatically matched to their planned zones. Devices can be quickly added to the mesh using proximity-based lists, streamlining configuration. Daylight sensors can be calibrated, triggers tested, and installations validated in real time. Once deployed, users can compare real-world performance with initial plans, fine-tune parameters, and reassign devices as needed for optimal results.
+      </p>
+    </div>
+
+     <div class="order-6 mt-10">
+      <img class="lg:max-w-3/4 rounded-xl justify-self-center bg-transparent" src="../img/silvair/mobile.png" alt="Silvair Mobile" />
+    </div>   
   
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28">
-       <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Web App – Planning Stage key flows</h1>
-      <div class="mt-4 text-2xl text-gray-700">
-    <ul>
-      <li><strong>Create account & Start project:</strong> Smooth onboarding. Users set up a project workspace and manage team roles from the Collaborate section.</li>
-      <li><strong>Set Floor Plans:</strong> Upload floor plans and create zones using a visual canvas for intuitive room organization.</li>
-      <li><strong>Define Lighting Zones & Light scenarios:</strong> Assign zones, select pre‑built lighting control profiles (like daylight harvesting), and tweak parameters.</li>
-    </ul>
-    </div>  
     </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="rounded-xl bg-transparent w-full" src="../img/silvair/laptop.png" alt="" />
-    </div>
+
+
     
+  <!--Section 4-->  
+    <div class="w-full h-200 flex items-center justify-center bg-cover bg-center bg-fixed p-6 sm:p-10 lg:p-20" 
+     style="background-image: url('../img/silvair/workshops.png')">
+
+  <div class="lg:max-w-270 bg-white/90 p-8 md:p-20">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-gray-900">
+      Ideas First. Pixels Later
+    </h1>
+    <p class="text-base 2xl:text-2xl mt-5 font-normal text-pretty text-gray-700">
+      The UX process began with concept sketches, early research, and collaborative workshops designed to align the team around user needs and business objectives.
+      We facilitated structured design sessions where we explored early ideas and uncovered pain points.
+    </p>
   </div>
 
-<!--Section 3-->
-  <div class="mx-auto lg:mx-22 mt-30 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
+</div>
+
+
+
+  <!--Section 5-->  
+<div class=" w-full mx-auto bg-[#212223] p-6 sm:p-10 lg:p-20">
+     <div class="order-6 mt-10">
+      <img class="lg:max-w-3/4 rounded-xl justify-self-center bg-transparent" src="../img/silvair/mobile_app_arch.png" alt="Architecture" />
+    </div>
   
-    <div class="lg:max-w-180 px-8 sm:px-4 mt-28 sticky top-15 mb-40 h-fit">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Mobile App – On‑Site commissioning</h1>
-<div class="mt-4 text-2xl text-gray-700">
-    <ul>
-      <li><strong>Device Discovery & Provisioning:</strong> Scan for mesh-capable luminaires, sensors, and switches, automatically matching them to planned zones.</li>
-      <li><strong>Add Devices to Network:</strong> Easily add devices to the mesh using proximity-based lists for quick configuration.</li>
-      <li><strong>Calibration & Testing:</strong> Calibrate daylight sensors, test triggers, and validate installations in real-time.</li>
-      <li><strong>Review & Optimize:</strong> Compare real-world performance to plans, adjust parameters, and reassign devices if needed.</li>
-    </ul>
-    </div>
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-
-      <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/silvair/mobile.jpg" alt="" />
-    </div>
-    </div>
-      
-  </div>
-
-
-
-
-
-
-  <!--Section 4-->
-  <div>
-    <div class="p-12 min-w-2xl">
-   
-      <img class="max-w-396 m-auto rounded-xl bg-transparent w-full" src=" ../img/silvair/workshops.png" alt="" />
-
-       <p class="mt-10 mb-22 text-2xl max-w-300 m-auto text-center break-after-avoid text-gray-700">Our UX process began with concept sketches reaserch and collaborative workshops aimed at aligning the team around user needs and business goals. 
-We facilitated structured design sessions where we explore early ideas and uncover pain points.</p>
-    </div>
-  </div>
-
-
-
- <!--Section 5-->
- <div>
-    <div class="p-12 min-w-2xl">
-      
-      <img class="max-w-396 m-auto rounded-xl bg-transparent w-full" src="../img/silvair/mobile_app_arch.png" alt="" />
-      <p class="mt-10 mb-22 text-2xl max-w-300 m-auto text-center break-after-avoid text-gray-700">Next, we created initial user flows and low-fidelity sketches to visualize how users would interact with the system across different scenarios. 
-These early artifacts helped us map out key screens and navigation patterns, ensuring that the overall structure supported intuitive and efficient workflows. At this stage, we also prepare prototypes and conducted user testing to validate our assumptions. </p> 
-
-    </div>
-  </div>
-
+  <div class="container lg:max-w-270 mx-auto mt-15 lg:mt-25 lg:mb-15">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-white">Shaping the experience</h1>
+<p class="text-base 2xl:text-2xl mt-5 mb-10 font-normal  text-pretty text-white/70">
+Next, initial user flows and low-fidelity sketches were created to visualize how people would interact with the system across different scenarios. These early artifacts helped define key screens and navigation patterns, ensuring the overall structure supported intuitive and efficient workflows. At this stage, interactive prototypes were also prepared, followed by user testing to validate core assumptions and refine the experience.    </div>
  
-
- <!--Section 5-->
- <div>
-    <div class="p-12 min-w-2xl">
-
-      <img class="max-w-396 m-auto rounded-xl bg-transparent w-full" src="../img/silvair/FInal_flow.png" alt="" />
-
-      <p class="mt-10 mb-22 text-2xl max-w-300 m-auto text-center break-after-avoid text-gray-700">During the design handoff, we delivered detailed user flows and provided developers with high-fidelity mockups and specifications. 
-We ensured that each interaction and screen state was clearly documented to support accurate implementation. 
-Finally, we collaborated closely with the development team, iterating on the implementation until the commissioning app was ready for production release.
-</p>
-
     </div>
-  </div>
+
+
+     <!--Section 6-->  
+<div class=" w-full mx-auto bg-[#212223] p-6 sm:p-10 lg:p-20">
+     <div class="order-6 mt-10">
+      <img class="lg:max-w-3/4 rounded-xl justify-self-center bg-transparent" src="../img/silvair/FInal_flow.png" alt="Architecture" />
+    </div>
+  
+  <div class="container lg:max-w-270 mx-auto mt-15 lg:mt-25 lg:mb-15">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-white">Seamless Design Handoff</h1>
+<p class="text-base 2xl:text-2xl mt-5 mb-10 font-normal  text-pretty text-white/70">
+During the handoff phase, detailed user flows, high-fidelity mockups, and comprehensive specifications were delivered to support development. Every interaction and screen state was thoroughly documented to ensure clarity and consistency. Close collaboration with the engineering team allowed for iterative feedback and refinement, helping bring the commissioning app to life with precision and confidence. 
+    </div>
+
+</div>
 
 
 
 <!--Cross link-->
-  <div class="w-full px-8">
-  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+  <div class="w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto">
     
-    <a href="freelance.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="freelance.html" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">Freelance</h3>
     </a>
     
-    <a href="Ilumio.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="Ilumio.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">iLumio</h3>
     </a>
 
   </div>
 </div>
-
 </div>
+
 
 
 
