@@ -23,88 +23,92 @@
     </a>
   </header>
 
-  <!-- HERO SECTION -->
-  <div id="hero" class="relative w-full h-screen overflow-hidden group">
+<!-- HERO SECTION -->
+  <div id="hero" class="relative w-full min-h-[50vh] sm:h-screen overflow-hidden">
 
-      <!-- Background Image -->
-    <div class="fixed inset-0 bg-cover bg-center" 
-      style="background-image: url('../img/Klif/Klif._bg.png');">
+    <!-- Background Image -->
+    <div class="fixed inset-0 bg-center bg-no-repeat bg-cover w-full 
+     bg-[url('../img/klif/Klif_BG_mobile.jpg')] 
+     md:bg-[url('../img/klif/Klif_BG.jpg')]">
     </div>
+
     <!-- Color Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent ">
-    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+  
     <!-- Hero Content -->
-    <div class="relative z-10 px-10 sm:px-10 lg:px-20 flex items-end h-full pb-20">
-      <div class="flex-wrap">
-      <h1 class="text-4xl sm:text-4xl lg:text-8xl antialiased font-medium font-sans text-white">
-         Klif Fashion House
-      </h1>
-      <p class="text-2xl text-white mt-8 font-light tracking-wide">Klif is a stylish shopping center in Warsaw offering top fashion brands and personalized styling services.</p>
-    </div>    
+    <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
+      <div class="block">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl antialiased font-medium font-sans text-white">
+          Klif Fashion House
+        </h1>
+        <p class="text-lg md:text-2xl mt-2 lg:mt-6 text-white font-light antialiased tracking-wider text-pretty">Klif is a stylish shopping center in Warsaw offering top fashion brands and personalized styling services.
+        </p>
+      </div>    
     </div>
   </div>
 
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+<div class="relative isolate overflow-hidden bg-white pt-8 lg:pt-20">
   
+<!--Grid -->
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8 items-center px-6 sm:px-10 lg:px-20">
   
-  <!--Section 1-->
-  <div class="mx-auto lg:mx-22 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
-  
-    <div class="lg:max-w-180 px-8 sm:px-4 flex flex-wrap h-fill items-center mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
-      <p class="mt-4 text-2xl text-gray-700">As a Senior UX Web Designer, I collaborated directly with the client for the Klif Dom Mody website, conducting iterative research to refine user needs, performing prototyping to test and enhance designs, and ensuring an intuitive interface for exploring fashion trends, magazine/blog access, event schedules, and Warsaw center map navigation.</p>
-
+   <!--Section 1-->
+    <div class="lg:max-w-170 block justify-self-center order-1 ">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">As a Senior UX Web Designer, I collaborated directly with the client for the Klif Dom Mody website, conducting iterative research to refine user needs, performing prototyping to test and enhance designs, and ensuring an intuitive interface for exploring fashion trends, magazine/blog access, event schedules, and Warsaw center map navigation.</p>
     </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-2 w-full hidden lg:block md:hidden lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="relative  max-w-150 w-full  bg-transparent" src="../img/Klif/bag2.png" alt="" />
-    </div>
-      
+    <div class="order-2 mt-10">
+      <img class="w-fit max-h-100 lg:max-h-150 rounded-xl justify-self-center bg-transparent" src="../img/Klif/bag2.png" alt="Bag" />
+    </div>   
   </div>
 
-  <!--Section 2-->
-  <div class="mx-auto mt-16 lg:grid grid-cols-2 gap-x-8 items-center">
-  
-    <div class="lg:max-w-180 px-8 sm:px-4 mt-28 sticky top-15">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Klif Dom Mody</h1>
-      <p class="mt-4 text-2xl text-gray-700">The Klif Dom Mody website serves as an online fashion hub, showcasing seasonal trends, with a focus on designer collections and new arrivals. It provides access to a magazine for style inspiration, a blog for fashion insights, and information on top brands, while offering event schedules, a newsletter subscription, and a map for the Warsaw center location.</p>
-    </div>
-      
-    <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/Klif/HOME PAGE_cropped.png" alt="" />
-    </div>
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8 px-6 py-15 lg:py-20 sm:px-10 lg:px-20 mt-10 md:mt-20 bg-[#E9F0F2]">
     
+    <!--Section 2-->  
+  <div class="lg:max-w-170 block order-4 mt-0 lg:mt-30 justify-self-start">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-5 lg:mt-10 font-bold tracking-tight text-pretty text-gray-900">Klif Fashion House</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+     The Klif Fashion House website serves as an online fashion hub, showcasing seasonal trends, with a focus on designer collections and new arrivals. It provides access to a magazine for style inspiration, a blog for fashion insights, and information on top brands, while offering event schedules, a newsletter subscription, and a map for the Warsaw center location.</p>
+    </div>
+    <div class="order-3 mt-10">
+      <img class="w-fit rounded-xl lg:max-w-4/5 justify-self-center bg-transparent" src="../img/Klif/HOME PAGE_cropped.png" alt="Fashion House" />
+    </div>
+
   </div>
 
-<!--Section 3-->
-  <div class="mx-auto lg:mx-22 mt-16 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
+
+    <!--Section 3-->  
+<div class=" w-full mx-auto p-6 sm:p-10 lg:p-20 mt-0 mb-10 sm:mt-20">
+
+     <div class="order-6 mt-8">
+      <img class="lg:max-w-3/4 rounded-xl justify-self-center bg-transparent" src="../img/Klif/mapa.png" alt="Map" />
+    </div>   
+
+    <div class="container lg:max-w-270 mx-auto mt-8 lg:mt-15 lg:mb-15">
+<p class="text-base 2xl:text-2xl mt-5 font-normal  text-pretty text-gray-700">
+      The navigational tool for the Klif shopping center. Interactive map allows users to explore the center's layout, locate stores, and access information about brands and services.
+      </p>
+    </div>
   
-    <div class="lg:max-w-180 sm:px-4 flex flex-wrap h-fit items-center sticky top-15 mt-20 z-10 bg-white/50 border-1 border-white backdrop-blur-md rounded-lg">
-      <p class="mt-4 text-2xl text-gray-700">The navigational tool for the Klif shopping center. Interactive map allows users to explore the center's layout, locate stores, and access information about brands and services.</p>
-
     </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-      <img class=" rounded-xl shadow-2xs w-300 relative lg:right-45 md:right-auto md-left-auto sm:right-auto sm:left-auto " src="../img/Klif/mapa.png" alt="" />
-    </div>
-      
-  </div>
 
-
-<!--Cross link-->
-  <div class="w-full px-8">
-  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+    <!--Cross link-->
+  <div class="w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto ring ring-gray-200">
     
-    <a href="incampagna.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="incampagna.htmll" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">InCampagna</h3>
     </a>
     
-    <a href="esky.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="esky.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">eSky</h3>
     </a>
 
   </div>
 </div>
+</div>
+
+
 
 </div>
 

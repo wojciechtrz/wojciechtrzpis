@@ -361,6 +361,9 @@
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -409,11 +412,17 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-19 {
+    margin-bottom: calc(var(--spacing) * 19);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -477,6 +486,12 @@
   }
   .max-h-32 {
     max-height: calc(var(--spacing) * 32);
+  }
+  .max-h-40 {
+    max-height: calc(var(--spacing) * 40);
+  }
+  .max-h-100 {
+    max-height: calc(var(--spacing) * 100);
   }
   .max-h-150 {
     max-height: calc(var(--spacing) * 150);
@@ -816,6 +831,9 @@
   .bg-\[url\(\'\.\.\/img\/iLumio\/Ilumio_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/iLumio/Ilumio_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/klif\/Klif_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/klif/Klif_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/motorola\/Motorola_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/motorola/Motorola_BG_mobile.jpg');
   }
@@ -873,6 +891,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -926,6 +947,15 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
@@ -1407,6 +1437,16 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .sm\:mt-15 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 15);
+    }
+  }
+  .sm\:mt-20 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .sm\:mt-50 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 50);
@@ -1582,6 +1622,11 @@
       height: calc(var(--spacing) * 120);
     }
   }
+  .md\:max-h-150 {
+    @media (width >= 48rem) {
+      max-height: calc(var(--spacing) * 150);
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1595,6 +1640,11 @@
   .md\:bg-\[url\(\'\.\.\/img\/iLumio\/Ilumio_BG\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('../img/iLumio/Ilumio_BG.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/img\/klif\/Klif_BG\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../img/klif/Klif_BG.jpg');
     }
   }
   .md\:bg-\[url\(\'\.\.\/img\/motorola\/Motorola_BG\.jpg\'\)\] {
@@ -1690,6 +1740,11 @@
       margin-top: calc(var(--spacing) * 6);
     }
   }
+  .lg\:mt-10 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:mt-15 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 15);
@@ -1733,6 +1788,11 @@
   .lg\:h-200 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 200);
+    }
+  }
+  .lg\:max-h-150 {
+    @media (width >= 64rem) {
+      max-height: calc(var(--spacing) * 150);
     }
   }
   .lg\:max-w-3\/4 {
@@ -1813,6 +1873,11 @@
   .lg\:px-20 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .lg\:pt-20 {
