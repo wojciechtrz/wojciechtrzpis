@@ -482,6 +482,12 @@
   .max-h-32 {
     max-height: calc(var(--spacing) * 32);
   }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
+  }
+  .max-h-150 {
+    max-height: calc(var(--spacing) * 150);
+  }
   .max-h-\[500px\] {
     max-height: 500px;
   }
@@ -828,6 +834,9 @@
   }
   .bg-\[url\(\'\.\.\/img\/iLumio\/iLumio_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/iLumio/iLumio_BG_mobile.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/motorola\/Motorola_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/motorola/Motorola_BG_mobile.jpg');
   }
   .bg-\[url\(\'\.\.\/img\/silvair\/Silvair_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/silvair/Silvair_BG_mobile.jpg');
@@ -1585,6 +1594,11 @@
       margin-top: calc(var(--spacing) * 10);
     }
   }
+  .md\:mt-20 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .md\:mt-50 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 50);
@@ -1605,6 +1619,16 @@
       border-radius: var(--radius-xl);
     }
   }
+  .md\:bg-\[url\(\'\.\.\.\.\/img\/Motorola\/Motorola_bg\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('..../img/Motorola/Motorola_bg.png');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/img\/Motorola\/Motorola_bg\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../img/Motorola/Motorola_bg.png');
+    }
+  }
   .md\:bg-\[url\(\'\.\.\/img\/iLumio\/Ilumio_BG\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('../img/iLumio/Ilumio_BG.jpg');
@@ -1613,6 +1637,11 @@
   .md\:bg-\[url\(\'\.\.\/img\/iLumio\/iLumio_BG\.jpg\'\)\] {
     @media (width >= 48rem) {
       background-image: url('../img/iLumio/iLumio_BG.jpg');
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/img\/motorola\/Motorola_BG\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../img/motorola/Motorola_BG.jpg');
     }
   }
   .md\:bg-\[url\(\'\.\.\/img\/silvair\/Silvair_BG\.jpg\'\)\] {
