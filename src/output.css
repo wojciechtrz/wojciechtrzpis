@@ -798,6 +798,9 @@
   .bg-\[url\(\'\.\.\/img\/Freelance\/Freelance_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Freelance/Freelance_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/Freelance\/free_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Freelance/free_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/Freelance\/freelance_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Freelance/freelance_BG_mobile.jpg');
   }
@@ -1486,6 +1489,11 @@
   .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/Freelance_bg\.png\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Freelance/Freelance_bg.png');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/free_bg\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Freelance/free_bg.jpg');
     }
   }
   .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/freelance_bg\.jpg\'\)\] {
