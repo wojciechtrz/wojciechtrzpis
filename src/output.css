@@ -1453,6 +1453,11 @@
       background-image: url('../img/Mckinsey/McKinsey_BG.jpg');
     }
   }
+  .sm\:bg-\[url\(\'\.\.\/img\/Viners\/VIner_BG\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Viners/VIner_BG.jpg');
+    }
+  }
   .sm\:bg-\[url\(\'\.\.\/img\/Viners\/Viner_BG\.jpg\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Viners/Viner_BG.jpg');
