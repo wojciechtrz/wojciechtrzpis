@@ -1476,6 +1476,11 @@
       gap: calc(var(--spacing) * 2);
     }
   }
+  .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/Free\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Freelance/Free.jpg');
+    }
+  }
   .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/Free_B\.jpg\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Freelance/Free_B.jpg');
