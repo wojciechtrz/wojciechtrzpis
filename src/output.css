@@ -752,6 +752,9 @@
   .bg-\[url\(\'\.\.\/img\/Mckinsey\/McKinsey_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Mckinsey/McKinsey_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/Motorola\/Motorola_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Motorola/Motorola_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/Viners\/Viners_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Viners/Viners_BG_mobile.jpg');
   }
@@ -1484,6 +1487,11 @@
   .md\:rounded-xl {
     @media (width >= 48rem) {
       border-radius: var(--radius-xl);
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/img\/Motorola\/Motorola_BG\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../img/Motorola/Motorola_BG.jpg');
     }
   }
   .md\:bg-\[url\(\'\.\.\/img\/iLumio\/Ilumio_BG\.jpg\'\)\] {
