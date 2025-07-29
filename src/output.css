@@ -777,6 +777,9 @@
   .bg-\[url\(\'\.\.\/img\/Incampagna\/Incampagna_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Incampagna/Incampagna_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/Klif\/Klif_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Klif/Klif_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/Mckinsey\/McKinsey_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Mckinsey/McKinsey_BG_mobile.jpg');
   }
@@ -1553,6 +1556,11 @@
   .md\:rounded-xl {
     @media (width >= 48rem) {
       border-radius: var(--radius-xl);
+    }
+  }
+  .md\:bg-\[url\(\'\.\.\/img\/Klif\/Klif_BG\.jpg\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('../img/Klif/Klif_BG.jpg');
     }
   }
   .md\:bg-\[url\(\'\.\.\/img\/Motorola\/Moto_BG\.jpg\'\)\] {
