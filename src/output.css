@@ -849,6 +849,9 @@
   .bg-\[url\(\'\.\.\/img\/Incampagna\/Incampagna_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Incampagna/Incampagna_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/Viners\/Viners_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Viners/Viners_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/esky\/esky_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/esky/esky_BG_mobile.jpg');
   }
@@ -1566,6 +1569,16 @@
   .sm\:bg-\[url\(\'\.\.\/img\/Incampagna\/Incampagna_bg\.png\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Incampagna/Incampagna_bg.png');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\.\/img\/Viners\/VIners_bg\.png\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Viners/VIners_bg.png');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\.\/img\/Viners\/Viners_BG\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Viners/Viners_BG.jpg');
     }
   }
   .sm\:bg-\[url\(\'\.\.\/img\/silvair\/Silvair_BG\.jpg\'\)\] {

@@ -23,78 +23,82 @@
     </a>
   </header>
 
-  <!-- HERO SECTION -->
-  <div id="hero" class="relative w-full h-screen overflow-hidden group">
 
-      <!-- Background Image -->
-    <div class="fixed inset-0 bg-cover bg-center" 
-      style="background-image: url('../img/Viners/VIners_bg.png');">
+<!-- HERO SECTION -->
+  <div id="hero" class="relative w-full min-h-[50vh] sm:h-screen overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="fixed inset-0 bg-center bg-no-repeat bg-cover w-full 
+            bg-[url('../img/Viners/Viners_BG_mobile.jpg')] 
+            sm:bg-[url('../img/Viners/Viners_BG.jpg')]">
     </div>
+
     <!-- Color Overlay -->
-    <div class="absolute inset-0 backdrop-hue-rotate-30 bg-gradient-to-t from-black to-transparent ">
-    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+  
     <!-- Hero Content -->
-    <div class="relative z-10 px-10 sm:px-10 lg:px-20 flex items-end h-full pb-20">
-      <div class="flex-wrap">
-      <h1 class="text-4xl sm:text-4xl lg:text-8xl max-w-3xl antialiased font-medium font-sans text-white">
-         Viners
-      </h1>
-      <p class="text-2xl text-white mt-8 font-light tracking-wide">Viners – elegant British cutlery and kitchenware since 1908.</p>
-    </div>    
+    <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
+      <div class="block">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl antialiased font-medium font-sans text-white">
+          Viners
+        </h1>
+        <p class="text-lg md:text-2xl mt-2 lg:mt-6 text-white font-light antialiased tracking-wider text-pretty">Elegant British cutlery and kitchenware.</p>
+      </div>    
     </div>
   </div>
+  
 
 
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-  
-  
- <!--Section 1-->
-  <div class="mx-auto lg:mx-22 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 flex flex-wrap h-fill items-center mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
-      <p class="mt-4 text-2xl text-gray-700">Designed the Viners e-commerce application tailored for online shoppers. Produced visual concepts from low-fidelity sketches to high-fidelity interactive prototypes</p>
+<div class="relative isolate overflow-hidden bg-white">
 
+
+
+ <!--Grid -->
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8  px-6 sm:px-10 lg:px-20">
+  
+   <!--Section 1-->
+    <div class="lg:max-w-170 block lg:py-20 py-15 justify-self-center order-1 ">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl md:mt-10 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
+      <p class="text-base 2xl:text-2xl mt-5 font-normal  text-pretty text-gray-700">Designed the Viners e-commerce application tailored for online shoppers. Produced visual concepts from low-fidelity sketches to high-fidelity interactive prototypes.</p>
     </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="w-full max-w-150 rounded-xl bg-transparent" src="../img/Viners/render.png" alt="" />
+    <div class="order-2 mt-10 md:mt-20">
+      <img class="w-fit rounded-xl hidden justify-self-center bg-transparent" src="../img/Viners/render.pngg" alt="Cubotto" />
+    </div>   
+
+         <!--Section 2-->  
+  <div class="lg:max-w-170 block mt-20 lg:mt-30 justify-self-center order-4">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-10 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Viners Cutlery</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+      The Viners website serves as an online retail platform offering a wide range of kitchen and dining products, including cutlery, cookware, dinnerware, glassware, and gift sets. It enables users to browse daily deals, bestsellers, new arrivals, and promotions, with options to apply discount codes, claim a welcome gift, and explore brand collections, while providing easy access to account management and customer support.</p>
     </div>
-      
+    <div class="order-3 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Viners/VIners.png" alt="Viners" />
+    </div>
+
+
   </div>
 
-  <!--Section 2-->
-  <div class="mx-auto mt-16 lg:grid grid-cols-2 gap-x-8 items-center">
-  
-    <div class="lg:max-w-180 px-8 sm:px-4 mt-28 sticky top-15">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Viners Cutlery</h1>
-      <p class="mt-4 text-2xl text-gray-700">The Viners website serves as an online retail platform offering a wide range of kitchen and dining products, including cutlery, cookware, dinnerware, glassware, and gift sets. It enables users to browse daily deals, bestsellers, new arrivals, and promotions, with options to apply discount codes, claim a welcome gift, and explore brand collections, while providing easy access to account management and customer support.</p>
-    </div>
-      
-    <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/Viners/VIners.png" alt="" />
-    </div>
     
-  </div>
 
 
 
 <!--Cross link-->
-  <div class="w-full px-8">
-  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+  <div class="w-full mt-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto ring ring-gray-200">
     
-    <a href="Mck.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
-      <h3 class="text-2xl font-semibold">McKinsey</h3>
+    <a href="Mck.html" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+      <h3 class="text-2xl font-semibold">McKinseys</h3>
     </a>
     
-    <a href="freelance.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="freelance.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">Freelance</h3>
     </a>
 
   </div>
 </div>
-
 </div>
+
+
 
 
 
