@@ -792,6 +792,9 @@
   .bg-\[radial-gradient\(45rem_50rem_at_top\,var\(--color-indigo-100\)\,white\)\] {
     background-image: radial-gradient(45rem 50rem at top,var(--color-indigo-100),white);
   }
+  .bg-\[url\(\'\.\.\/img\/Freelance\/Free_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Freelance/Free_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/Freelance\/Freelance_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Freelance/Freelance_BG_mobile.jpg');
   }
@@ -944,6 +947,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -1467,6 +1473,11 @@
       gap: calc(var(--spacing) * 2);
     }
   }
+  .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/Free_bg\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Freelance/Free_bg.jpg');
+    }
+  }
   .sm\:bg-\[url\(\'\.\.\/img\/Freelance\/Freelance_bg\.jpg\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Freelance/Freelance_bg.jpg');
@@ -1741,9 +1752,19 @@
       margin-top: calc(var(--spacing) * 30);
     }
   }
+  .lg\:mt-40 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 40);
+    }
+  }
   .lg\:mt-50 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:mt-420 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 420);
     }
   }
   .lg\:mr-0 {
@@ -1821,6 +1842,26 @@
       grid-template-rows: repeat(2, minmax(0, 1fr));
     }
   }
+  .lg\:gap-y-40 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:gap-y-50 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:gap-y-60 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:gap-y-200 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 200);
+    }
+  }
   .lg\:overflow-hidden {
     @media (width >= 64rem) {
       overflow: hidden;
@@ -1854,6 +1895,11 @@
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pt-20 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .lg\:text-4xl {
