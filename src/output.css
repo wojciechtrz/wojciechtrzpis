@@ -849,6 +849,9 @@
   .bg-\[url\(\'\.\.\/img\/Incampagna\/Incampagna_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Incampagna/Incampagna_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/Mckinsey\/McKinsey_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/Mckinsey/McKinsey_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/Viners\/Viners_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Viners/Viners_BG_mobile.jpg');
   }
@@ -998,6 +1001,9 @@
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -1571,6 +1577,16 @@
       background-image: url('../img/Incampagna/Incampagna_bg.png');
     }
   }
+  .sm\:bg-\[url\(\'\.\.\/img\/Mckinsey\/McKinsey_BG\.jpg\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Mckinsey/McKinsey_BG.jpg');
+    }
+  }
+  .sm\:bg-\[url\(\'\.\.\/img\/Mckinsey\/McKinsey_bg\.png\'\)\] {
+    @media (width >= 40rem) {
+      background-image: url('../img/Mckinsey/McKinsey_bg.png');
+    }
+  }
   .sm\:bg-\[url\(\'\.\.\/img\/Viners\/VIners_bg\.png\'\)\] {
     @media (width >= 40rem) {
       background-image: url('../img/Viners/VIners_bg.png');
@@ -1611,9 +1627,24 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .sm\:py-10 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:py-20 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
   .sm\:py-32 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:pt-20 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 20);
     }
   }
   .sm\:pb-0 {
