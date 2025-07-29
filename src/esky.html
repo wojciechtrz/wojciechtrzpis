@@ -23,114 +23,106 @@
     </a>
   </header>
 
-
-
-
   <!-- HERO SECTION -->
-  <div id="hero" class="relative w-full h-screen overflow-hidden">
+  <div id="hero" class="relative w-fullmin-h-[50vh] sm:h-screen overflow-hidden">
 
-      <!-- Background Image -->
-    <div class="fixed inset-0 bg-cover bg-center">
-    <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
+   <!-- Background for mobile -->
+<div class="fixed inset-0 bg-center bg-no-repeat bg-cover w-full 
+            sm:hidden
+            bg-[url('../img/silvair/Silvair_BG_mobile.jpg')]">
+</div>
 
-        <source src="../img/esky/esky_movie.mp4" type="video/mp4">
-    </video>
-    </div>
+<!-- Color Overlay -->
+    <div class="sm:hidden absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+
+<!-- Background video from sm and up -->
+<div class="fixed inset-0 bg-cover bg-center hidden sm:block">
+  <video autoplay loop muted class="absolute w-auto min-w-full min-h-full max-w-none">
+    <source src="../img/esky/esky_movie.mp4" type="video/mp4">
+  </video>
+</div>
+
     <!-- Hero Content -->
-    <div class="relative z-10 px-10 sm:px-10 lg:px-20 flex items-end h-full pb-20">
-      <div class="flex-wrap">
-      <h1 class="text-4xl sm:text-4xl lg:text-8xl max-w-3xl antialiased font-medium font-sans text-white">
-        eSky.pl
-      </h1>
-      <p class="text-2xl text-white mt-8 font-light tracking-wide">Online travel agency helping travelers plan and book trips worldwide.</p>
-    </div>    
+    <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
+          <div class="block">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl antialiased font-medium font-sans text-white">
+              eSky.pl
+            </h1>
+            <p class="text-lg md:text-2xl mt-2 lg:mt-6 text-white font-light antialiased tracking-wider text-pretty">Online travel agency helping travelers plan and book trips worldwide.</p>
+          </div>    
+        </div>
+      </div>
+
+
+
+<div class="relative isolate overflow-hidden bg-white">
+  
+<!--Grid -->
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8  px-6 sm:px-10 lg:px-20">
+  
+   <!--Section 1-->
+    <div class="lg:max-w-170 block lg:py-20 py-15 justify-self-center order-1 ">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl md:mt-10 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">Collaborated within a cross-functional product team to design and improve the web application. Responsible for designing the Deals section of the platform, focusing on engaging layouts and intuitive UI.</p>
+    </div>
+    <div class="order-2 mt-10 md:mt-20">
+      <img class="w-fit rounded-xl hidden justify-self-center bg-transparent" src="../img/esky/Dreamliner.png" alt="Fly" />
+    </div>   
+
+      <!--Section 2-->  
+  <div class="lg:max-w-170 block mt-10 md:mt-20 justify-self-center order-4">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-10 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">eSky Deals page</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+      The Deals page is designed to make discovering and booking discounted flights and travel packages simple and engaging. It help users quickly find relevant offers supporting spontaneous travel decisions.</p>
+    </div>
+    <div class="order-3 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/esky/home_page.png" alt="Travel" />
+    </div>
+
+    <!--Section 3-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-5">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Envisioning and Optimizing</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    We tested multiple design variants of the Deals page, including grid vs list layouts, filter placements and card styles.</div>
+    <div class="order-6 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/esky/offers.png" alt="Media" />
+    </div>
+  
+     <!--Section 4-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-8">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">eSky IT</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    Showcases
+    the company’s latest job opportunities, core corporate values, and the talented team behind innovative travel technologies.</p>    </div>
+    <div class="order-7 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/esky/about.png" alt="Media" />
     </div>
   </div>
 
 
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-  
-  <!--Section 1-->
-  <div class="mx-auto lg:mx-22 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 flex flex-wrap h-fill items-center mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">My role</h1>
-      <p class="mt-4 text-2xl text-gray-700">Collaborated within a cross-functional product team to design and improve the web application. Responsible for designing the Deals section of the platform, focusing on engaging layouts and intuitive navigation. Created concepts and layouts for the Home page.</p>
-
-    </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-2 hidden lg:block md:hidden lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="w-full rounded-xl -rotate-45 bg-transparent" src="../img/esky/Dreamliner.png" alt="" />
-    </div>
-      
-  </div>
-
-  <!--Section 2-->
-  <div class="mx-auto mt-16 lg:grid grid-cols-2 gap-x-8 items-center">
-  
-    <div class="lg:max-w-180 px-8 sm:px-4 mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">eSky Deals page</h1>
-      <p class="mt-4 text-2xl text-gray-700">The Deals page is designed to make discovering and booking discounted flights and travel packages simple and engaging. It help users quickly find relevant offers supporting spontaneous travel decisions.</p>
-    </div>
-      
-    <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/esky/home_page.png" alt="" />
-    </div>
-    
-  </div>
-
-<!--Section 3-->
-  <div class="mx-auto lg:mx-22 mt-16 lg:grid grid-cols-2 justify-items-center gap-x-8 ">
-  
-    <div class="lg:max-w-180 sm:px-4 flex flex-wrap h-fit items-center sticky top-15 mt-20 z-10 bg-white/50 border-1 border-white backdrop-blur-md rounded-lg">
-      <p class="mt-4 text-2xl text-gray-700">We tested multiple design variants of the Deals page, including grid vs list layouts, filter placements and card styles.
-
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-      <img class=" rounded-xl shadow-2xs w-300 relative  md-left-auto sm:right-auto sm:left-auto " src="../img/esky/offers.png" alt="" />
-    </div>
-      
-  </div>
-
-  <!--Section 2-->
-  <div class="mx-auto mt-16 lg:grid grid-cols-2 gap-x-8 items-center">
-  
-    <div class="lg:max-w-180 px-8 sm:px-4 mt-28">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">eSky IT</h1>
-      <p class="mt-4 text-2xl text-gray-700"> Showcases
-    the company’s latest job opportunities, core corporate values, and the talented team behind innovative travel technologies.
-</p>
-    </div>
-      
-    <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/esky/about.png" alt="" />
-    </div>
-    
-  </div>
-
-
-  <div>
+  <div class="mt-10 lg:mt-20 mb-20" >
  <video autoplay muted class="w-[1200px] object-cover h-[769px] m-auto md:w-fill sm:w-fill">>
   <source src="../img/esky/esky_map.mp4" type="video/mp4">
 </video>
-<p class="mt-4 text-2xl max-w-200 m-auto text-center break-after-avoid text-gray-700">Working on eSky.pl gave me valuable experience designing for a global e-commerce platform, balancing complex business requirements with user needs, and creating digital products that make travel planning easier and more enjoyable experience.</p>
+<p class="text-base px-8 text-center m-auto 2xl:text-2xl lg:max-w-270 mt-5 font-normal text-pretty text-gray-700">Working on eSky.pl gave me valuable experience designing for a global e-commerce platform, balancing complex business requirements with user needs, and creating digital products that make travel planning easier and more enjoyable experience.</p>
   </div>
 
-<div class="w-full px-8">
-  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+<!--Cross link-->
+  <div class="w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto ring ring-gray-200">
     
-    <a href="klif.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="klif.html" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">Klif Fashion House</h3>
     </a>
     
-    <a href="Mck.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="Mck.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">McKinsey</h3>
     </a>
 
   </div>
 </div>
 </div>
+
 
 
   <script>

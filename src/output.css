@@ -966,6 +966,9 @@
   .py-24 {
     padding-block: calc(var(--spacing) * 24);
   }
+  .py-25 {
+    padding-block: calc(var(--spacing) * 25);
+  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -984,8 +987,14 @@
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-25 {
+    padding-bottom: calc(var(--spacing) * 25);
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -1478,6 +1487,16 @@
       display: none;
     }
   }
+  .sm\:h-100 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 100);
+    }
+  }
+  .sm\:h-120 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 120);
+    }
+  }
   .sm\:h-full {
     @media (width >= 40rem) {
       height: 100%;
@@ -1561,6 +1580,11 @@
   .sm\:py-32 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:pb-0 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 0);
     }
   }
   .sm\:pb-20 {
@@ -1668,6 +1692,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .md\:pb-0 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:text-2xl {
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
@@ -1769,6 +1798,11 @@
   .lg\:mt-30 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:mt-50 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 50);
     }
   }
   .lg\:mr-0 {
