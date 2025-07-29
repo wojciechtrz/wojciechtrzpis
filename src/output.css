@@ -834,6 +834,9 @@
   .bg-\[url\(\'\.\.\/img\/Incampagna\/Incampagna_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/Incampagna/Incampagna_BG_mobile.jpg');
   }
+  .bg-\[url\(\'\.\.\/img\/esky\/esky_BG_mobile\.jpg\'\)\] {
+    background-image: url('../img/esky/esky_BG_mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/img\/iLumio\/Ilumio_BG_mobile\.jpg\'\)\] {
     background-image: url('../img/iLumio/Ilumio_BG_mobile.jpg');
   }
