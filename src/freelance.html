@@ -23,190 +23,144 @@
     </a>
   </header>
 
-  <!-- HERO SECTION -->
-  <div id="hero" class="relative w-full h-screen overflow-hidden group">
 
-      <!-- Background Image -->
-    <div class="fixed inset-0 bg-cover bg-center" 
-      style="background-image: url('../img/Freelance/Freelance_bg.png');">
+<!-- HERO SECTION -->
+  <div id="hero" class="relative w-full min-h-[50vh] sm:h-screen overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="fixed inset-0 bg-center bg-no-repeat bg-cover w-full 
+            bg-[url('../img/Freelance/Freelance_BG_mobile.jpg')] 
+            sm:bg-[url('../img/Freelance/Freelance_bg.jpg')]">
     </div>
+
     <!-- Color Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent ">
-    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+  
     <!-- Hero Content -->
-    <div class="relative z-10 px-10 sm:px-10 lg:px-20 flex items-end h-full pb-20">
-      <div class="flex-wrap">
-      <h1 class="text-4xl sm:text-4xl lg:text-8xl max-w-3xl antialiased font-medium font-sans text-white">
-         Freelance
-      </h1>
-      <p class="text-2xl text-white mt-8 font-light tracking-wide"> Notable freelance projects that have shaped my journey over time.</p>
-    </div>    
+    <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[80vh] sm:h-full pb-10 sm:pb-20">
+      <div class="block">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl antialiased font-medium font-sans text-white">
+          Freelance
+        </h1>
+        <p class="text-lg md:text-2xl mt-2 lg:mt-6 text-white font-light antialiased tracking-wider text-pretty">Notable projects that have shaped my journey over time.</p>
+      </div>    
     </div>
   </div>
 
 
-<div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+
+
+
+<div class="relative isolate overflow-hidden bg-white">
+  
+<!--Grid -->
+  <div class="lg:grid grid-cols-2 gap-y-25 gap-x-8  px-6 sm:px-10 lg:px-20">
+  
+   <!--Section 1-->
+    <div class="lg:max-w-170 block lg:py-20 py-15 justify-self-center order-1 ">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl md:mt-10 font-bold tracking-tight text-pretty text-gray-900">Corel Dicovery Center</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">The Corel Discovery Center website is a resource hub featuring tutorials, learning materials, and creative content, designed to assist users in enhancing their skills with engaging visuals and easy navigation.</p>
+    </div>
+    <div class="order-2 mt-10 md:mt-20">
+      <img class="w-fit rounded-xl justify-self-center bg-transparent" src="../img/Freelance/corel_home_page.png" alt="Corel" />
+    </div>   
+
+      <!--Section 2-->  
+  <div class="lg:max-w-170 block mt-10 md:mt-20 justify-self-center order-4">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-10 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Scrum Days Poland 2014</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+      Scrum Days Poland is a conference focused on Scrum and Agile methodologies, held in Warsaw to promote professional development and networking. The promotional website serves to provide event details and facilitate registration through an email signup form.</p>
+    </div>
+    <div class="order-3 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/scrum_days.png" alt="Scrum DAYS" />
+    </div>
+
+    <!--Section 3-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-5">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">DPD corporate page</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    Corporate platform providing information on delivery services, shipment tracking, service offerings, and customer support.</p>
+  </div>
+    <div class="order-6 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/DPD.png" alt="DPD" />
+    </div>
+  
+     <!--Section 4-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-8">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Strefa Paczki DPD</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    Section on the DPD Poland website is a dedicated area for managing parcel services, offering options to send, receive, or track international and domestic packages.</p>    
+  </div>
+    <div class="order-7 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/strefa.jpg" alt="Strefa paczki" />
+    </div>
+  
+       <!--Section 5-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-8">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Akademia Mistrza</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    Educational platform focused on culinary arts, offering training information, expert advice, and recipes to enhance professional skills and promote high-quality food production standards.
+      </p>
+    </div>
+    <div class="order-9 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/akademia.png" alt="Akademia wypieków" />
+    </div>
+  
+      <!--Section 6-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-11">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Funcik, tanie przelewy z UK</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    Platform for facilitating secure money transfers to Poland, allowing users to send or receive funds through a simple online form.</p>    
+  </div>
+    <div class="order-10 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/minutka.png" alt="Funcik" />
+    </div>
+  
+    <!--Section 7-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-11">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Banpost</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    The Banpost Serwis website serves as a professional platform for offering repair and maintenance services for office equipment, featuring a selection of 264 products such as shredders printers and folders.
+      </p>
+  </div>
+    <div class="order-12 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/Banpost.jpg" alt="Banpost" />
+    </div>
   
 
-  <!--Section 2-->
-  <div class="mx-auto  lg:grid grid-cols-2 gap-x-8 items-center">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Corel Dicovery Center</h1>
-      <p class="mt-4 text-2xl text-gray-700">The Corel Discovery Center website is a resource hub featuring tutorials, learning materials, and creative content, designed to assist users in enhancing their skills with engaging visuals and easy navigation.</p>
+         <!--Section 8-->  
+  <div class="lg:max-w-170 block mt-10 lg:mt-30 justify-self-center order-14">
+      <h1 class="text-3xl lg:text-4xl 2xl:text-5xl mt-20 lg:mt-0 font-bold tracking-tight text-pretty text-gray-900">Pethome</h1>
+      <p class="text-base 2xl:text-2xl mt-3 lg:mt-5 font-normal  text-pretty text-gray-700">
+    The PetHome website functions as a social media platform tailored for pets, allowing users to create profiles, share galleries, join groups, post advertisements, and engage in forums.</p>    </div>
+    <div class="order-13 mt-5">
+      <img class="w-full rounded-md md:rounded-xl justify-self-center bg-transparent" src="../img/Freelance/pethome_new.png" alt="Pethome" />
     </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/corel_home_page.png" alt="" />
-    </div>
-    
-  </div>
 
-<!--Section 3-->
-  <div class="mx-auto lg:mx-22 mt-30 lg:grid grid-cols-2 justify-items-center gap-x-8">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Scrum Days Poland 2014</h1>
-      <p class="mt-4 text-2xl text-gray-700">Scrum Days Poland is a conference focused on Scrum and Agile methodologies, held in Warsaw to promote professional development and networking. The promotional website serves to provide event details and facilitate registration through an email signup form.
-
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-
-      <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full" src="../img/Freelance/scrum_days.png" alt="" />
-    </div>
-    </div>
-      
-  </div>
-
-
- <!--Section 4-->
-  <div class="mx-auto mt-30 lg:grid grid-cols-2 gap-x-8 items-center ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">DPD corporate page</h1>
-      <p class="mt-4 text-2xl text-gray-700">The DPD Poland website is a corporate platform providing information on delivery services, shipment tracking, service offerings, and customer support.</p>
-    </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/DPD.png" alt="" />
-    </div>
-    
-  </div>
-
-  <!--Section 5-->
-  <div class="mx-auto lg:mx-22 mt-30 lg:grid grid-cols-2 justify-items-center gap-x-8 h-full ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 h-fit mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Strefa Paczki DPD</h1>
-      <p class="mt-4 text-2xl text-gray-700">The "Strefa Paczki" section on the DPD Poland website is a dedicated area for managing parcel services, offering options to send, receive, or track international and domestic packages.
-
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-
-      <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/strefa.jpg" alt="" />
-    </div>
-      
-  </div>
-  </div>
-
-
-   <!--Section 6-->
-  <div class="mx-auto mt-30 lg:grid grid-cols-2 gap-x-8 items-center ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Akademia Mistrza</h1>
-      <p class="mt-4 text-2xl text-gray-700">Educational platform focused on culinary arts, offering training information, expert advice, and recipes to enhance professional skills and promote high-quality food production standards.</p>
-    </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/akademia.png" alt="" />
-    </div>
-    
-  </div>
-
-  <!--Section 7-->
-  <div class="mx-auto lg:mx-22 mt-30 lg:grid grid-cols-2 justify-items-center gap-x-8 h-full ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 h-fit mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Funcik, tanie przelewy z UK</h1>
-      <p class="mt-4 text-2xl text-gray-700">Platform for facilitating secure money transfers to Poland, allowing users to send or receive funds through a simple online form.
-
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-
-      <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/minutka.png" alt="" />
-    </div>
-      
-  </div>
-  </div>
-
-  <!--Section 8-->
-  <div class="mx-auto mt-30 lg:grid grid-cols-2 gap-x-8 items-center ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Banpost</h1>
-      <p class="mt-4 text-2xl text-gray-700">The Banpost Serwis website serves as a professional platform for offering repair and maintenance services for office equipment, featuring a selection of 264 products such as shredders printers and folders.</p>
-    </div>
-      
-    <div class="p-12 lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/Banpost.jpg" alt="" />
-    </div>
-    
-  </div>
-
-
-   <!--Section 9-->
-  <div class="mx-auto lg:mx-22 mt-30 lg:grid grid-cols-2 justify-items-center gap-x-8 h-full ">
-  
-    <div class="lg:max-w-150 px-8 sm:px-4 mt-28 sticky top-15 h-fit mb-20">
-      <h1 class=" text-4xl mt-2 font-bold tracking-tight text-pretty text-gray-900">Pethome</h1>
-      <p class="mt-4 text-2xl text-gray-700">The PetHome website functions as a social media platform tailored for pets, allowing users to create profiles, share galleries, join groups, post advertisements, and engage in forums.</p>
-
-    </div>
-      
-    <div class=" lg:top-4 lg:col-start-2 mt-8 lg:row-span- lg:row-start-1 ">
-
-      <div class="p-12 min-w-2xl lg:top-4 lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-      <img class="max-w-none rounded-xl bg-transparent w-full shadow-md" src="../img/Freelance/pethome_new.jpg.png" alt="" />
-    </div>
-      
-  </div>
-  </div>
-
-
-
-
-
-
-
-
+</div>
 
 
 
 
 
 <!--Cross link-->
-  <div class="w-full px-8">
-  <div class="grid grid-cols-2 w-full m-auto mt-22 gap-6">
+  <div class="w-full mt-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto ring ring-gray-200">
     
-    <a href="viners.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="viners.html" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">Viners</h3>
     </a>
     
-    <a href="silvair.html" class="flex justify-center items-center p-20 rounded-2xl bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+    <a href="silvair.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
       <h3 class="text-2xl font-semibold">Silvair Platform</h3>
     </a>
 
   </div>
 </div>
-
 </div>
+
+
+
 
 
 
