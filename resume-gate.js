@@ -8,21 +8,6 @@ const passwordInput = document.getElementById("resume-password");
 const passwordError = document.getElementById("resume-password-error");
 const passwordErrorMessage = document.getElementById("resume-password-error-message");
 const resumeContent = document.getElementById("resume-content");
-const resumeBackground = document.getElementById("resume-background");
-
-if (resumeBackground && matchMedia("(pointer: fine)").matches && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  document.addEventListener("pointermove", (event) => {
-    const x = event.clientX / window.innerWidth - 0.5;
-    const y = event.clientY / window.innerHeight - 0.5;
-    resumeBackground.classList.add("is-active");
-    resumeBackground.style.transform = `translate3d(${-x * 64}px, ${-y * 64}px, 0) scale(1.1)`;
-  });
-
-  document.addEventListener("pointerleave", () => {
-    resumeBackground.classList.remove("is-active");
-    resumeBackground.style.transform = "scale(1.1)";
-  });
-}
 
 if (passwordGate && passwordForm && passwordInput && passwordError && passwordErrorMessage && resumeContent) {
   const unlockResume = () => {
