@@ -4,37 +4,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./src/output.css" rel="stylesheet" />
+
+  <title>Wojciech Trzpis — UX/UI Designer</title>
+  <link rel="stylesheet" href="src/output.css" />
 </head>
 
-<body class="h-full bg-black opacity-0 transition-opacity duration-500 ease-in pb-64">
+<body class="h-full bg-[#0a0908 transition-opacity duration-500 ease-in pb-64">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/SplitText.min.js"></script>
   
- 
-
-<header id="header" class="flex items-center justify-between px-4 py-4 bg-transparent fixed w-full transition-colors duration-700 backdrop-blur-md z-50">
-  <a href="index.html">
-    <img class="w-[2rem] z-10" src="img/Logo_W.png" alt="Logo" />
+<header
+  id="header"
+  class="fixed z-50 flex w-full items-center justify-between bg-[#000000d4] px-4 py-4 backdrop-blur-md transition-colors duration-700"
+>
+  <a href="index.html" class="z-10 flex items-center gap-3">
+    <img class="w-8" src="img/Logo_W.png" alt="" />
+    <span class="font-sans text-sm font-medium tracking-wide text-white sm:text-base">
+      Wojciech Trzpis
+    </span>
   </a>
 
   <!-- DESKTOP MENU -->
-  <div class="hidden sm:flex items-center z-20" id="menu">
+  <div class="hidden items-center sm:flex" id="menu">
     <nav>
-      <ul class="flex gap-3 items-center justify-between text-lg font-sans text-gray-200 pt-0">
+      <ul class="flex items-center justify-between gap-3 pt-0 font-sans text-lg text-gray-200">
         <li>
-          <a id="home-link" class="rounded-full py-1 px-4 block border-2 border-transparent font-semibold transition-colors duration-300 ease-in-out" href="#">Home</a>
+          <a
+            id="home-link"
+            class="block rounded-full border-2 border-transparent px-4 py-1 font-semibold transition-colors duration-300 ease-in-out"
+            href="#"
+          >
+            Home
+          </a>
         </li>
         <li>
-          <a id="projects-link" class="rounded-full py-1 px-4 block border-2 border-transparent font-semibold transition-colors duration-300 ease-in-out" href="#nextSection">Projects</a>
+          <a
+            id="projects-link"
+            class="block rounded-full border-2 border-transparent px-4 py-1 font-semibold transition-colors duration-300 ease-in-out"
+            href="#nextSection"
+          >
+            Projects
+          </a>
         </li>
         <li>
-          <a class="py-1 px-4 block font-semibold rounded-full border-2 border-transparent hover:border-white/90 hover:text-white transition-colors duration-300 ease-in-out" href="src/resume.html">Resume</a>
+          <a
+            class="block rounded-full border-2 border-transparent px-4 py-1 font-semibold transition-colors duration-300 ease-in-out hover:border-white/90 hover:text-white"
+            href="src/resume.html"
+          >
+            Resume
+          </a>
         </li>
       </ul>
     </nav>
   </div>
 
-  <!-- MOBILE MENU -->
-  <button id="burger-btn" class="sm:hidden bg-transparent text-white text-2xl py-1/2 px-1.5 z-20 hover:bg-white/10 transition-colors duration-300 ease-in-out">
+  <!-- MOBILE MENU BUTTON -->
+  <button
+    id="burger-btn"
+    class="z-20 bg-transparent px-1.5 py-1 text-2xl text-white transition-colors duration-300 ease-in-out hover:bg-white/10 sm:hidden"
+    aria-label="Open menu"
+    aria-controls="mobile-menu"
+    aria-expanded="false"
+  >
     ☰
   </button>
 </header>
@@ -58,27 +89,64 @@
   </div>
 </div>
 
-  <!-- HERO SECTION -->
+ <!-- =========================
+       HERO
+  ========================== -->
   <div id="hero" class="relative w-full min-h-[50vh] sm:h-screen overflow-hidden group">
+
+
+<div class="content">
+  <img class="flair" src="img/Flair/Revised+Flair.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-1.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-2.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-3.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-4.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-5.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-6.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-7.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-8.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-9.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-10.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-11.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-12.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-13.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-14.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-15.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-16.png" alt="">  
+  <img class="flair" src="img/Flair/Revised+Flair-17.png" alt="">  
+  <img class="flair" src="img/Flair/Revised+Flair-18.png" alt="">  
+  <img class="flair" src="img/Flair/Revised+Flair-19.png" alt="">  
+  <img class="flair" src="img/Flair/Revised+Flair-20.png" alt="">  
+  <img class="flair" src="img/Flair/Revised+Flair-21.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-22.png" alt="">
+  <img class="flair" src="img/Flair/Revised+Flair-23.png" alt=""> 
+  <img class="flair" src="img/Flair/Revised+Flair-24.png" alt="">         
+  
+</div>
+
     <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-3000 group-checked:scale-110" 
-      style="background-image: url('img/BG.png');">
+    <div id="hero-bg" class="absolute inset-0 bg-cover bg-center">
     </div>
     <!-- Color Overlay -->
-    <div class="absolute inset-0 backdrop-blur-sm bg-black/90 group-hover:backdrop-blur-none transition-all duration-2000 ease-in-out">
+    <div class="absolute bg-black/90 inset-0 group-hover:backdrop-blur-none transition-all duration-2000 ease-in-out">
     </div>
     <!-- Hero Content -->
     <div class="relative z-10 px-6 sm:px-10 lg:px-20 flex items-end min-h-[50vh] sm:h-full pb-8 sm:pb-20">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl sm:max-w-4xl antialiased font-extralight font-sans text-white">
-        Hello I’m Wojciech Trzpis, <a class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">UX/UI Designer</a> with
-        +10 years of experience
+      <h1 id="hero-title" class="w-full text-3xl md:text-4xl lg:text-5xl leading-tight antialiased font-extralight font-sans text-white">
+        Hello, I’m Wojciech Trzpis, a <span id="hero-role" class="hero-gradient">UX/UI Designer</span><br />
+        I make complex digital products easier to understand and use.
       </h1>
     </div>
   </div>
 
-  <!--GRID-->
-  <div id="nextSection" class="bg-gray-50 py-4 sm:px-10 lg:px-20 font-sans">
-    <div class="mx-auto max-w-2xl px-5 sm:px-6 lg:max-w-7xl lg:px-8">    
+  <script src="motion.js"></script>
+
+ <!-- =========================
+       GRID OF PROJECTS
+  ========================== -->
+  <section>
+  <div id="nextSection" class="pt-24 pb-32 sm:px-10 lg:px-8 font-sans">
+    <div class="mx-auto max-w-2xl px-5 sm:px-6 lg:max-w-[90rem] lg:px-8">    
       <div class="my-1 grid gap-5 sm:grid-cols-1 sm:w-full md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
 
         <!--Card 1-->
@@ -319,127 +387,106 @@
       </div>
     </div>
   </div>
-</section>
+
+    </section>
 
 
-  <script>
-    const header = document.getElementById("header");
-    const hero = document.getElementById("hero");
+ <!-- =========================
+       ABOUT
+  ========================== -->
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            header.classList.remove("bg-[#000000d4]");
-            header.classList.add("bg-transparent");
-          } else {
-            header.classList.remove("bg-transparent");
-            header.classList.add("bg-[#000000d4]");
-          }
-        });
-      },
-      {
-        threshold: 0,
-        rootMargin: `-${header.offsetHeight}px 0px 0px 0px`
-      }
-    );
+  <section
+    id="about"
+    class="hidden border-t border-white/10 px-6 py-20 sm:px-10 lg:px-20 lg:py-32 bg-[#0a0908]"
+  >
 
-    observer.observe(hero);
-  </script>
+    <div class="grid gap-12 lg:grid-cols-2">
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.remove("opacity-0");
-    });
-  </script>
+      <div>
+        <p class="mb-3 text-sm uppercase tracking-widest text-white/40">
+          About
+        </p>
 
-  <script>
-    document.querySelectorAll("[data-fade]").forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.body.classList.add("opacity-0");
-        setTimeout(() => {
-          window.location.href = link.href;
-        }, 500);
-      });
-    });
-  </script>
-
-  <!-- SCROLL SPY -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const homeLink = document.getElementById("home-link");
-      const projectsLink = document.getElementById("projects-link");
-      const hero = document.getElementById("hero");
-      const projects = document.getElementById("nextSection");
-
-      function activate(link) {
-        link.classList.add("bg-white", "text-indigo-700", "border-2", "border-transparent");
-      }
-
-      function deactivate(link) {
-        link.classList.remove("bg-white", "text-indigo-700", "border-2", "border-transparent");
-      }
-
-      function checkScroll() {
-        const heroRect = hero.getBoundingClientRect();
-        const projectsRect = projects.getBoundingClientRect();
-
-        if (heroRect.bottom > 200) {
-          activate(homeLink);
-          deactivate(projectsLink);
-        } else if (projectsRect.top <= window.innerHeight && projectsRect.bottom >= 0) {
-          activate(projectsLink);
-          deactivate(homeLink);
-        } else {
-          activate(homeLink);
-          deactivate(projectsLink);
-        }
-      }
-
-      window.addEventListener("scroll", checkScroll);
-      checkScroll();
-    });
-  </script>
+        <h2 class=" text-white text-3xl font-light md:text-4xl">
+          Designing digital products
+          <br />
+          people can actually use.
+        </h2>
+      </div>
 
 
-<!--mobile menu-->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const burgerBtn = document.getElementById('burger-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileOverlay = document.getElementById('mobile-overlay');
+      <div class="max-w-xl text-lg font-light leading-relaxed text-white/60">
 
-    let isOpen = false;
+        <p class="text-white/60">
+          I’m a UX/UI Designer focused on complex digital products,
+          enterprise applications and design systems.
+        </p>
 
-    const openMenu = () => {
-      mobileOverlay.classList.remove('hidden');
-      mobileMenu.classList.remove('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
-      mobileMenu.classList.add('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
-      isOpen = true;
-    };
+        <p class="mt-6 text-white/60">
+          I combine UX thinking, visual design and prototyping with
+          a growing focus on frontend technologies and AI-assisted
+          development.
+        </p>
 
-    const closeMenu = () => {
-      mobileMenu.classList.remove('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
-      mobileMenu.classList.add('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
-      setTimeout(() => {
-        mobileOverlay.classList.add('hidden');
-      }, 300); 
-      isOpen = false;
-    };
+      </div>
 
-    burgerBtn.addEventListener('click', () => {
-      isOpen ? closeMenu() : openMenu();
-    });
+    </div>
 
-    mobileOverlay.addEventListener('click', (e) => {
-      if (e.target === mobileOverlay) {
-        closeMenu();
-      }
-    });
-  });
-</script>
+  </section>
 
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section
+    id="contact"
+    class="border-t border-white/10 px-6 py-12 sm:px-10 lg:px-20 lg:py-20 bg-[#0a0908]"
+  >
+
+    <h2 class="max-w-4xl text-3xl font-light leading-tight md:text-4xl lg:text-5xl text-white">
+      Let’s build something
+      <span
+        class="bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
+      >
+        meaningful.
+      </span>
+    </h2>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer
+    class="border-t border-white/10 px-6 py-8 sm:px-10 lg:px-20 bg-[#0a0908]"
+  >
+
+    <div
+      class="flex flex-col justify-between gap-4 text-sm text-white/40 sm:flex-row"
+    >
+
+      <p>
+        © 2026 Wojciech Trzpis
+      </p>
+
+      <a
+        href="#hero"
+        class="transition hover:text-white"
+      >
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+
+<script src="page-fade.js"></script>
+
+<script src="menu.js"></script>
 
 </body>
 </html>

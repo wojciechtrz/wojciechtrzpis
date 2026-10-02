@@ -8,7 +8,9 @@
 <body class="min-h-screen bg-[#0a0908] text-gray-800 opacity-0 transition-opacity duration-500 ease-in">
 
   <!-- FIXED BACKGROUND -->
-  <div 
+  <div
+    id="resume-background"
+    aria-hidden="true"
     class="fixed inset-0 bg-cover bg-center bg-fixed z-0 pointer-events-none"
     style="background-image: url('../img/BG.png');">
   </div>
@@ -65,9 +67,24 @@
 </div>
 
 
+<section id="resume-password-gate" class="relative z-10 flex min-h-screen items-center justify-center px-6 py-24">
+  <form id="resume-password-form" novalidate class="w-full rounded-2xl border border-white/20 bg-white/90 p-8 shadow-xl backdrop-blur" style="max-width: 32rem;">
+    <h1 class="text-3xl font-light text-gray-900">Enter the password to<br />view my resume</h1>
+    <label for="resume-password" class="mt-6 block font-medium text-gray-800">Password</label>
+    <input id="resume-password" name="password" type="password" autocomplete="current-password" required class="mt-2 w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 focus:border-indigo-700 focus:outline-none focus:ring-1 focus:ring-indigo-700" />
+    <button type="submit" class="mt-4 w-full cursor-pointer rounded-lg bg-black px-4 py-3 font-medium text-white transition hover:bg-gray-800">View resume</button>
+    <p id="resume-password-error" class="resume-password-error text-sm text-red-700" role="alert" aria-hidden="true">
+      <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" />
+        <path stroke-linecap="round" d="M12 8v4m0 4h.01" />
+      </svg>
+      <span id="resume-password-error-message"></span>
+    </p>
+  </form>
+</section>
 
 
-  <main class="relative z-10 pt-8 pb-10">
+  <main id="resume-content" class="relative z-10 hidden pt-8 pb-10">
 
     <!-- HERO SECTION -->
     <div id="hero" class="relative w-full overflow-visible group">
@@ -95,7 +112,7 @@
               <p class="text-gray-600">Sep 2021 - Present</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Leading the end-to-end design process, from user research to final UI delivery for should-costing platform.</li>
                     <li>Leading the integration of AI Assitants into an existing product.</li>
@@ -113,15 +130,6 @@
                     <li>Reviewing design work and providing clear, constructive feedback to ensure quality and consistency.</li>
                     <li>Mentoring and supporting the growth of junior designers.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -133,7 +141,7 @@
               <p class="text-gray-600">May 2017 - Jun 2023</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Designing the Silvair Platform’s web application and iOS app to enable seamless provisioning, commissioning, and management of Bluetooth Mesh lighting networks.</li>
                     <li>Creating a modern UX for complex IoT system.</li>
@@ -144,15 +152,6 @@
                     <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
                     <li>Leading and participating in brainstorming sessions.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -164,7 +163,7 @@
               <p class="text-gray-600">Jul 2019 - Sep 2021</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Designing the Partner Hub web platform to streamline collaboration between Motorola Solutions and its global partner network.</li>
                     <li>Collaborating closely multidisciplinary teams worldwide on refinements, design handoff, reviews, and implementation iterations.</li>
@@ -173,15 +172,6 @@
                     <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
                     <li>Building interactive prototypes in Sketch.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -194,7 +184,7 @@
               <p class="text-gray-600">Mar 2016 - Apr 2017</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Contributing to the strategic redesign of the Offers section in ING’s web application to improve product discovery and engagement.</li>
                     <li>Creating interactive, prototypes in Axure to support user testing and stakeholder validation.</li>
@@ -203,15 +193,6 @@
                     <li>Facilitating and participating in brainstorming workshops to define user flows, generate design concepts, and align cross-functional teams.</li>
                     <li>Collaborating daily with the Polish design team to maintain consistency across features and ensure smooth delivery within agile sprints.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -224,7 +205,7 @@
               <p class="text-gray-600">Sep 2014 - Mar 2016</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Designing the Deals section for eSky.pl to enhance user engagement and highlight competitive travel offers.</li>
                     <li>Envisioning and shaping concepts for the homepage to improve navigation, branding consistency, and conversion rates.</li>
@@ -233,15 +214,6 @@
                     <li>Designing the About Us and Contact sections to build trust, convey brand values, and facilitate user communication.</li>
                     <li>Creating interactive internal dashboards to support data-driven decision-making and improve operational transparency within the company.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -254,7 +226,7 @@
               <p class="text-gray-600">Sep 2014 - Mar 2016</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Designed the iLumio smart TV application tailored for hotel environments, enhancing guest engagement.</li>
                     <li>Mapped user journeys and developed wireframes to optimize the guest experience from TV navigation to hotel service interaction.</li>
@@ -265,15 +237,6 @@
                     <li>Created detailed design documentation and guidelines to support future scalability and feature expansion.</li>
                     <li>Supported multiple implementations of the iLumio app in prestigious hotels, including the Hilton chain, delivering tailored solutions for diverse hospitality environments.</li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -286,7 +249,7 @@
               <p class="text-gray-600">Mar 2012 - May 2014</p>
 
               <div class="relative">
-                <div class="list-wrapper max-h-32 overflow-hidden relative transition-all duration-500 ease-in-out">
+                <div class="list-wrapper relative">
                   <ul class="list-disc ml-6 mt-2 text-gray-700 pr-4">
                     <li>Worked as a web designer for one of Poland’s leading interactive agencies, delivering high-quality digital solutions across diverse industries.</li>
                     <li>Contributed to projects for prominent clients including Corel Corporation, Rete InCampagna, Activist, Empik, Top Secret, Klif Fashion House, and Wola Park Warsaw.</li>
@@ -296,15 +259,6 @@
                     <li>Optimized website layouts and interactions for improved usability and engagement across devices.</li>
                     </li>
                   </ul>
-                  <div class="gradient-overlay absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
-                </div>
-
-                <div class="flex justify-end">
-                  <button
-                    class="toggle-button mt-4 px-4 py-1 font-medium bg-gray-100 text-black text-sm rounded-full hover:bg-gray-800 hover:text-white transition-colors duration-300 cursor-pointer"
-                  >
-                    Show all
-                  </button>
                 </div>
                 <div class="mt-8 border-t border-gray-300"></div>
               </div>
@@ -344,85 +298,9 @@
 
   </main>
 
-  <script>
-    // Fade in after page load
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.classList.remove("opacity-0");
-
-      // Collapsible list toggle for all buttons
-      document.querySelectorAll('.toggle-button').forEach(button => {
-        const wrapper = button.closest('.relative').querySelector('.list-wrapper');
-        const overlay = button.closest('.relative').querySelector('.gradient-overlay');
-        let expanded = false;
-
-        button.addEventListener('click', () => {
-          expanded = !expanded;
-
-          if (expanded) {
-            wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
-            overlay.style.display = 'none';
-            button.textContent = 'Show less';
-          } else {
-            wrapper.style.maxHeight = '8rem'; // max height collapsed (approx 4 lines)
-            overlay.style.display = 'block';
-            button.textContent = 'Show all';
-          }
-        });
-      });
-    });
-  </script>
-
-  <script>
-    // Page fade-out on link click
-    document.querySelectorAll("[data-fade]").forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.body.classList.add("opacity-0");
-        setTimeout(() => {
-          window.location.href = link.href;
-        }, 500);
-      });
-    });
-  </script>
-
-
-<!--mobile menu-->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const burgerBtn = document.getElementById('burger-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileOverlay = document.getElementById('mobile-overlay');
-
-    let isOpen = false;
-
-    const openMenu = () => {
-      mobileOverlay.classList.remove('hidden');
-      mobileMenu.classList.remove('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
-      mobileMenu.classList.add('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
-      isOpen = true;
-    };
-
-    const closeMenu = () => {
-      mobileMenu.classList.remove('opacity-100', 'max-h-[500px]', 'scale-y-100', 'visible');
-      mobileMenu.classList.add('opacity-0', 'max-h-0', 'scale-y-95', 'invisible');
-      setTimeout(() => {
-        mobileOverlay.classList.add('hidden');
-      }, 300); // po animacji
-      isOpen = false;
-    };
-
-    burgerBtn.addEventListener('click', () => {
-      isOpen ? closeMenu() : openMenu();
-    });
-
-    mobileOverlay.addEventListener('click', (e) => {
-      if (e.target === mobileOverlay) {
-        closeMenu();
-      }
-    });
-  });
-</script>
-
+<script src="../page-fade.js"></script>
+<script src="../menu.js"></script>
+<script src="../resume-gate.js"></script>
 
 
 
