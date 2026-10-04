@@ -4,7 +4,7 @@ function playAnimation(shape) {
   timeline.from(shape, {
     opacity: 0,
     scale: 0,
-    ease: "elastic.out(1,0.3)",
+    ease: "elastic.out(1,1)",
   })
   .to(shape, {
     rotation: "random([-360, 360])",

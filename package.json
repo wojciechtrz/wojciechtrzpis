@@ -16,5 +16,8 @@
     "flowbit": "^0.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@parcel/watcher-darwin-arm64": "^2.6.0"
   }
 }

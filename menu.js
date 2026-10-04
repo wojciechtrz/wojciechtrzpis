@@ -24,11 +24,11 @@ const projects = document.getElementById("nextSection");
 
 if (homeLink && projectsLink && hero && projects) {
   const activate = (link) => {
-    link.classList.add("bg-white", "text-indigo-700", "border-2", "border-transparent");
+    link.classList.add("bg-white", "text-indigo-700");
   };
 
   const deactivate = (link) => {
-    link.classList.remove("bg-white", "text-indigo-700", "border-2", "border-transparent");
+    link.classList.remove("bg-white", "text-indigo-700");
   };
 
   const checkScroll = () => {
