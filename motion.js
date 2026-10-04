@@ -134,3 +134,97 @@ if (heroTitle) {
     });
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentWord = document.querySelector("#contact-word-current");
+  const nextWord = document.querySelector("#contact-word-next");
+  const words = [
+    "meaningful",
+"useful",
+"intuitive",
+"human",
+"simple",
+"clear",
+"accessible",
+"thoughtful",
+"purposeful",
+"valuable",
+"impactful",
+"delightful",
+"elegant",
+"seamless",
+"coherent",
+"consistent",
+"practical",
+"efficient",
+"flexible",
+"scalable",
+"inclusive",
+"adaptive",
+"effective",
+"strategic",
+"relevant",
+"focused",
+"memorable",
+"remarkable",
+"intentional",
+"better",
+"smarter",
+"easier",
+"simpler",
+"clearer",
+"friendlier",
+"enjoyable",
+"ambitious",
+"considered",
+"human-centered",
+"user-focused",
+"future-ready",
+
+  ];
+
+  if (!currentWord || !nextWord) return;
+
+  gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+    let wordIndex = 0;
+    let outgoingWord = currentWord;
+    let incomingWord = nextWord;
+    let transition;
+    let pause;
+
+    const animateNextWord = () => {
+      incomingWord.textContent = `${words[wordIndex]}.`;
+      wordIndex = (wordIndex + 1) % words.length;
+
+      transition = gsap.timeline({
+        onComplete: () => {
+          outgoingWord.setAttribute("aria-hidden", "true");
+          incomingWord.removeAttribute("aria-hidden");
+          [outgoingWord, incomingWord] = [incomingWord, outgoingWord];
+          pause = gsap.delayedCall(1, animateNextWord);
+        },
+      });
+
+      transition
+        .to(outgoingWord, {
+          y: -12,
+          opacity: 0,
+          duration: 0.2,
+          ease: "power1.in",
+        }, 0)
+        .fromTo(
+          incomingWord,
+          { y: 12, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
+          0
+        );
+    };
+
+    animateNextWord();
+
+    return () => {
+      transition.kill();
+      if (pause) pause.kill();
+    };
+  });
+});
