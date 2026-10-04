@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
 "purposeful",
 "valuable",
 "impactful",
-"delightful",
 "elegant",
 "seamless",
 "coherent",
