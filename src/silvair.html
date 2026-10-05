@@ -7,11 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./output.css" rel="stylesheet" />
   <style>
+    .silvair-context-card {
+      width: 100%;
+      max-width: 44rem;
+    }
+
+    @media (min-width: 64rem) {
+      .silvair-context-layout {
+        grid-template-columns: minmax(0, 44rem) minmax(0, 1fr);
+        align-items: center;
+      }
+    }
+
     .green-section {
       background: linear-gradient(90deg, #51d1b0 0%, #4bc8a9 100%);
     }
-
-
   </style>
 </head>
 
@@ -181,12 +191,10 @@
   <div class="col-span-full order-2">
     <div
       class="relative left-1/2 flex min-h-[420px] w-screen -translate-x-1/2 items-center overflow-hidden bg-cover bg-center bg-no-repeat px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14"
-      style="background-image: url('../img/silvair/Silvair_office.png');"
+      style="background-image: url('../img/silvair/Silvair_office2.png');"
     >
-      <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 lg:grid-cols-[1fr_690px] lg:items-center 2xl:max-w-[90rem]">
-        <div class="hidden lg:block"></div>
-
-        <div class="bg-white/85 p-6 shadow-[0_18px_45px_rgba(15,23,42,0.18)] backdrop-blur-[2px] sm:p-8 lg:p-10">
+      <div class="silvair-context-layout mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 2xl:max-w-[90rem]">
+        <div class="silvair-context-card bg-white p-6 backdrop-blur-[2px] sm:p-8 lg:p-10">
           <h1 class="text-3xl font-bold tracking-tight text-pretty text-gray-900 lg:text-4xl 2xl:text-5xl">
             Context
           </h1>
@@ -218,7 +226,7 @@
       class="relative left-1/2 flex min-h-[420px] w-screen -translate-x-1/2 items-center overflow-hidden bg-cover bg-center bg-no-repeat px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14"
     >
       <div class="mx-auto grid w-full max-w-6xl grid-cols-1 lg:grid-cols-[620px_1fr] lg:items-center 2xl:max-w-[90rem]">
-        <div class="bg-white/85 p-6 backdrop-blur-[2px] sm:p-8 lg:p-10">
+        <div class="bg-white p-6 backdrop-blur-[2px] sm:p-8 lg:p-10">
           <h1 class="text-3xl font-bold tracking-tight text-pretty text-gray-900 lg:text-4xl 2xl:text-5xl">
             Planning stage
           </h1>
