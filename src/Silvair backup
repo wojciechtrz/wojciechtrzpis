@@ -1,0 +1,47 @@
+
+<!---->
+  <!--Section 5-->  
+<div class=" w-full mx-auto bg-[#212223] p-6 sm:p-10 lg:p-20">
+     <div class="order-6 mt-10">
+      <img class="lg:max-w-200px rounded-xl justify-self-center bg-transparent" src="../img/silvair/mobile_app_arch.png" alt="Architecture" />
+    </div>
+  
+  <div class="container lg:max-w-270 mx-auto mt-15 lg:mt-25 lg:mb-15">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-white">Shaping the experience</h1>
+<p class="text-base 2xl:text-2xl mt-5 mb-10 font-normal  text-pretty text-white/70">
+Next, initial user flows and low-fidelity sketches were created to visualize how people would interact with the system across different scenarios. These early artifacts helped define key screens and navigation patterns, ensuring the overall structure supported intuitive and efficient workflows. At this stage, interactive prototypes were also prepared, followed by user testing to validate core assumptions and refine the experience.    </div>
+ 
+    </div>
+
+
+     <!--Section 6-->  
+<div class=" w-full mx-auto bg-[#212223] p-6 sm:p-10 lg:p-20">
+     <div class="order-6 mt-10">
+      <img class="lg:max-w-3/4 rounded-xl justify-self-center bg-transparent" src="../img/silvair/FInal_flow.png" alt="Architecture" />
+    </div>
+  
+  <div class="container lg:max-w-270 mx-auto mt-15 lg:mt-25 lg:mb-15">
+    <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight text-pretty text-white">Seamless design handoff</h1>
+<p class="text-base 2xl:text-2xl mt-5 mb-10 font-normal  text-pretty text-white/70">
+During the handoff phase, detailed user flows, high-fidelity mockups, and comprehensive specifications were delivered to support development. Every interaction and screen state was thoroughly documented to ensure clarity and consistency. Close collaboration with the engineering team allowed for iterative feedback and refinement, helping bring the commissioning app to life with precision and confidence. 
+    </div>
+
+</div>
+
+
+
+<!--Cross link-->
+  <div class="w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 w-full m-auto ring ring-gray-200">
+    
+    <a href="freelance.html" class="flex justify-center items-center p-20 bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+      <h3 class="text-2xl font-semibold">Freelance</h3>
+    </a>
+    
+    <a href="Ilumio.html" class="flex justify-center items-center p-20  bg-gray-100 hover:bg-gray-200 transition-colors duration-400">
+      <h3 class="text-2xl font-semibold">iLumio</h3>
+    </a>
+
+  </div>
+</div>
+</div>-->
